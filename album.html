@@ -14,32 +14,59 @@
       <div class="row">
         <!-- First Row -->
         <div class="col-lg-3 col-md-4 col-sm-6 p-0">
-          <img src="" class="img-fluid" alt="" />
+          <img role="button" src="Assets/images/devita copy.jpg" class="img-fluid" alt="" />
 
           <!-- Next Columns -->
         </div>
         <!-- Second Row -->
         <div class="col-lg-3 col-md-4 col-sm-6 p-0">
-          <img src="" class="img-fluid" alt="" />
+          <img role="button" src="" class="img-fluid" alt="" />
 
           <!-- Next Columns -->
         </div>
         <!-- Third Row -->
         <div class="col-lg-3 col-md-4 col-sm-6 p-0">
-          <img src="" class="img-fluid" alt="" />
+          <img role="button" src="" class="img-fluid cursor-pointer" alt="" />
 
           <!-- Next Columns -->
         </div>
         <!-- Fourth Row -->
         <div class="col-lg-3 col-md-4 col-sm-6 p-0">
-          <img src="" class="img-fluid" alt="" />
+          <img role="button" src="" class="img-fluid" alt="" />
 
           <!-- Next Columns -->
         </div>
       </div>
     </section>
 
+    <div
+      class="modal fade"
+      id="img-preview"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content p-1">
+          <div class="modal-header bg-white rounded-top p-1">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body mb-0 p-0">
+            <img src="" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap JS Bundle -->
     <script src="Assets/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/js/jquery-3.6.0.slim.min.js"></script>
+    <script>
+      $('img').click(function(e){
+        let img = this.src;
+        $('#img-preview').modal('show');
+        $('#img-preview > div > div > div > img').attr('src', img);
+      });
+    </script>
   </body>
 </html>
