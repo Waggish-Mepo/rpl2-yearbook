@@ -132,6 +132,186 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        nis : "11907287",
+        name : "Mochammad Nabil Hakm",
+        nickname : "Nabil",
+        date_of_birth : "3/30/2004",
+        place_of_birth : "Sukabumi",
+        hobby : "Turu",
+        quote : "Turu",
+        message : "Turu",
+        instagram : "@Hkmnabil",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11907406",
+        name : "Nalisa Vianti",
+        nickname : "dipanggil woy jg nengok",
+        date_of_birth : "10/7/2003",
+        place_of_birth : "Jakarta",
+        hobby : "makan makan nonton",
+        quote : "selagi dia bisa knp hrs gua",
+        message : "tetaplah menyerah jngn smngt fwen",
+        instagram : "@nalisavv",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11907021",
+        name : "Amanda Agustin",
+        nickname : "Manda",
+        date_of_birth : "8/26/2003",
+        place_of_birth : "Bogor",
+        hobby : "Gambar",
+        quote : "au ahhh puyeng",
+        message : "semangat bestihhhh🔥🔥🔥",
+        instagram : "@amndair_",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11907335",
+        name : "Muhammad Abdurrasyid ",
+        nickname : "Rasyid",
+        date_of_birth : "11/24/2003",
+        place_of_birth : "Bogor",
+        hobby : "Bersantai",
+        quote : "Jika anda tidak menyukai sesuatu ubahlah, jika anda tidak bisa mengubahnya maka ubah sudut pandang anda",
+        message : "Jangan lupa rehat",
+        instagram : "@m.abdurrasyid24",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11806920",
+        name : "Suryo Slamet Mujahid Musyaffa",
+        nickname : "Suryo",
+        date_of_birth : "11/22/2003",
+        place_of_birth : "Jakarta",
+        hobby : "Gaming",
+        quote : "Life isn't that simple you fudge nuggets",
+        message : "Jangan update Windows",
+        instagram : "@suryomujahid",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11907436",
+        name : "Nurul Silpia ",
+        nickname : "Silpia",
+        date_of_birth : "7/31/2004",
+        place_of_birth : "Kasur ",
+        hobby : "Demus",
+        quote : "Semua manusia sama di mata ikan",
+        message : "Kalau nanti  zombie menyerbu kamu bakal aman, karena yang mereka incar adalah otak. Maaf ya, saya kalau lagi sendirian jarang ngobrol. Hehe :>",
+        instagram : "@silpia_nuruls",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11907055",
+        name : "Asya Meira Maharani Putri",
+        nickname : "Sya Asya Syaruunn",
+        date_of_birth : "5/11/2004",
+        place_of_birth : "Bogor",
+        hobby : "Yang pasti bukan ngoding",
+        quote : "Hidup adalah seni menggambar tanpa penghapus.",
+        message : "Jangan hidup kyk Newton, kebanyakan gaya. Hehehehe . Semngt cari cuan bestie.",
+        instagram : "@syamhrni_",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11907029",
+        name : "Andika Apriana",
+        nickname : "Dik",
+        date_of_birth : "4/19/2002",
+        place_of_birth : "Bogor",
+        hobby : "Ngegame",
+        quote : "Tetap menyerah jangan semangat!",
+        message : "Sehat sehat selalu ya!",
+        instagram : "@andikaapriana_",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "07",
+        name : "Muhamad Agung Laksana Putra",
+        nickname : "jhon",
+        date_of_birth : "12/18/0170",
+        place_of_birth : "bengkel ahass",
+        hobby : "mencari janda perawan",
+        quote : "Bila hidup mu sulit, dan ingin normal, maka ganti lah kesulitan itu di pengaturan.",
+        message : "\"Jika anda sudah memiliki pasangan, tolonglah jangan membina hubungan dengan orang lain, dan cobalah untuk setia dan menahan diri. \r\n Walaupun rumput tetangga lebih hijau, percayalah, walaupun rumput pasangan anda tidak hijau, setidaknya, masih lebat...\"",
+        instagram : "@agunglksnptra_",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11907257",
+        name : "Muhammad Zain Quroisy",
+        nickname : "Zein",
+        date_of_birth : "4/16/2004",
+        place_of_birth : "Bogor",
+        hobby : "Ngedeketin cewe, tapi gagal wae(tapi boong sih)🤓aing memang gini😁",
+        quote : "Make it work, make it right, make it fast, for everyone, everything and girls😀",
+        message : "Untuk chiko dan merlyn kucing ku tercinta jangan lupa untuk belajar silat",
+        instagram : "@zainquraisy1644",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11907092",
+        name : "Desy Fajriani",
+        nickname : "Desy kalau gak soya awoakaoak",
+        date_of_birth : "12/30/2004",
+        place_of_birth : "Bogor",
+        hobby : "Cari cuan 👍",
+        quote : "Aku bukan pemalas. Aku sedang menjalankan mode hemat energi.",
+        message : "Kapan bikin SIM cape jalan ke wikrama 😢",
+        instagram : "@soyaaaaa_04",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "11907266",
+        name : "Maulana Ardiansyah ",
+        nickname : "Bading",
+        date_of_birth : "10/18/2003",
+        place_of_birth : "Bogor ",
+        hobby : "Bebas",
+        quote : "Jika kau lapar, maka makanlah",
+        message : "Jawabannya ada di hati lanjut part 2",
+        instagram : "@maulanaardi18_",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "15151515",
+        name : "Muhamad Dandi Nurrizky",
+        nickname : "Danzzz",
+        date_of_birth : "8/17/1945",
+        place_of_birth : "Nusantara",
+        hobby : "Turu",
+        quote : "Seberat apapun pekerjaan akan terasa ringan jika tidak dikerjakan.",
+        message : "Terimakasih telah berjuang untuk spp + jajan + semesteran.",
+        instagram : "@dandinurrizky",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "176385337(2910)",
+        name : "Hussein Ismail",
+        nickname : "ɴᴇᴋᴏᴍᴀ",
+        date_of_birth : "7/3/2004",
+        place_of_birth : "Bogor",
+        hobby : "membantai public",
+        quote : "Mandi hanya untuk orang bau",
+        message : "Tobat Kok Diplanning?!",
+        instagram : "@husengaol",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "23",
+        name : "Muhammad Shiddiq Priyono",
+        nickname : "Zaw Phyo Aung ",
+        date_of_birth : "2/22/2004",
+        place_of_birth : "Bogor",
+        hobby : "Mobile Legends, Basket, Ngopi, Yang Paling Penting Turu Dek",
+        quote : "Bùtóng de rén yǒu bùtóng de chénggōng",
+        message : "\"For my mother, thank you for giving me everything \r \n 16,Waiting me\"",
+        instagram : "@shiddiqpryn",
+        picture : "picture.yntkts"
+    },
+    {
         nis : "",
         name : "",
         nickname : "",
@@ -143,5 +323,5 @@ const profiles =  [
         instagram : "",
         picture : "picture.yntkts"
     },
-    //input per 22:27:32 9 april 2022
+    //input per 16:13:27 10 april 2022
 ]
