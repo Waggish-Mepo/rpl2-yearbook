@@ -2,8 +2,10 @@ $(document).ready(function(){
 
     let html = '';
     let options = { year: 'numeric', month: 'long', day: 'numeric' };
-    profiles.forEach((profile) => {
+    
+    profiles.sort((a, b) => (a.no > b.no) ? 1 : -1);
 
+    profiles.forEach((profile) => {
         let dateOfBirth = new Date(profile.date_of_birth).toLocaleDateString('id-ID', options);
 
         html += `
@@ -31,7 +33,6 @@ $(document).ready(function(){
     })
 
     $('#profile-slider').html(html);
-    console.log(profiles);
     $(".owl-carousel").owlCarousel({
         loop:true,
         margin:10,

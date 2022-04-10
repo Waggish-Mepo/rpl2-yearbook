@@ -14,10 +14,9 @@ https://drive.google.com/uc?export=view&id=13O21HX86wUmbr8rs51RUwf3-af-XSOGB
 
 */
 
-
-
 const profiles =  [
     {
+        no : 32,
         nis : "11907601",
         name : "Yoga Pratama",
         nickname : "Agoy",
@@ -30,6 +29,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 28,
         nis : "11907455",
         name : "Rafi Fadhila Ramadhani ",
         nickname : "Bro",
@@ -42,6 +42,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no: 21,
         nis : "11907323",
         name : "Muhamad Rendi Syahril Saputra",
         nickname : "Rendi",
@@ -54,6 +55,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no: 6,
         nis : "11907084",
         name : "David Satya Wibisono",
         nickname : "David",
@@ -66,6 +68,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 9,
         nis : "11907154",
         name : "Fema Flamelina Putri",
         nickname : "Fema (make p juga bole la bole)",
@@ -78,6 +81,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 8,
         nis : "11907096",
         name : "Devita Hasnasya Rahma",
         nickname : "devita",
@@ -90,6 +94,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 26,
         nis : "11907434",
         name : "Nurul Aviah",
         nickname : "av",
@@ -102,6 +107,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 31,
         nis : "11907545",
         name : "Siti Nur Alawiyah",
         nickname : "Alaw",
@@ -114,6 +120,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 29,
         nis : "11907474",
         name : "Reski Junaidi Shalat",
         nickname : "-",
@@ -126,6 +133,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 20,
         nis : "11907305",
         name : "Muhamad Geovalza Valeriandi",
         nickname : "Ge-yo",
@@ -138,18 +146,20 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 12,
         nis : "11907239",
         name : "Muhamad Fadhil Mauladhani",
         nickname : "Kadang bapak sejarah, kadang bapak dosen tapi paling parah bapak pki sama bapak naji",
         date_of_birth : "5/16/2004",
         place_of_birth : "Bogor",
         hobby : "Memikirkan tujuan eksistensi manusia di dunia ini",
-        quote : "Per aspera ad astra, aquila non captat muscas",
+        quote : "Per aspera ad astra, aquila non captat muscas (gatau artinya apaan, keren aja gitu)",
         message : "Can i stay here for a while with all these good people? i don't wanna grow up.",
         instagram : "@altf4m8",
         picture : "picture.yntkts"
     },
     {
+        no : 18,
         nis : "11907287",
         name : "Mochammad Nabil Hakm",
         nickname : "Nabil",
@@ -162,6 +172,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 25,
         nis : "11907406",
         name : "Nalisa Vianti",
         nickname : "dipanggil woy jg nengok",
@@ -174,6 +185,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 3,
         nis : "11907021",
         name : "Amanda Agustin",
         nickname : "Manda",
@@ -186,6 +198,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 22,
         nis : "11907335",
         name : "Muhammad Abdurrasyid ",
         nickname : "Rasyid",
@@ -198,6 +211,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 1,
         nis : "11806920",
         name : "Suryo Slamet Mujahid Musyaffa",
         nickname : "Suryo",
@@ -210,6 +224,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 27,
         nis : "11907436",
         name : "Nurul Silpia ",
         nickname : "Silpia",
@@ -222,6 +237,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 5,
         nis : "11907055",
         name : "Asya Meira Maharani Putri",
         nickname : "Sya Asya Syaruunn",
@@ -234,6 +250,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 4,
         nis : "11907029",
         name : "Andika Apriana",
         nickname : "Dik",
@@ -246,6 +263,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 11,
         nis : "07",
         name : "Muhamad Agung Laksana Putra",
         nickname : "jhon",
@@ -258,6 +276,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 14,
         nis : "11907257",
         name : "Muhammad Zain Quroisy",
         nickname : "Zein",
@@ -270,6 +289,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 7,
         nis : "11907092",
         name : "Desy Fajriani",
         nickname : "Desy kalau gak soya awoakaoak",
@@ -282,6 +302,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 16,
         nis : "11907266",
         name : "Maulana Ardiansyah ",
         nickname : "Bading",
@@ -294,6 +315,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 19,
         nis : "15151515",
         name : "Muhamad Dandi Nurrizky",
         nickname : "Danzzz",
@@ -306,6 +328,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 10,
         nis : "176385337(2910)",
         name : "Hussein Ismail",
         nickname : "ɴᴇᴋᴏᴍᴀ",
@@ -318,6 +341,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 24,
         nis : "23",
         name : "Muhammad Shiddiq Priyono",
         nickname : "Zaw Phyo Aung ",
@@ -330,6 +354,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 13,
         nis : "11907248",
         name : "Muhammad Rakean Jati Permana Kusumah Hidayat",
         nickname : "mamatmanja",
@@ -342,6 +367,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 17,
         nis : "11907281",
         name : "Muhammad Haikal",
         nickname : "Kale",
@@ -354,6 +380,7 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
+        no : 2,
         nis : "-",
         name : "Aditya Pramuji",
         nickname : "Menyeng",
@@ -365,8 +392,48 @@ const profiles =  [
         instagram : "11906984",
         picture : "picture.yntkts"
     },
-    
+    //nggak ngisi form
+    {
+        no : 15,
+        nis : "11907260",
+        name : "Marhaensalenindo Komara",
+        nickname : "-",
+        date_of_birth : "5/23/2004",
+        place_of_birth : "Tangerang",
+        hobby : "-",
+        quote : "-",
+        message : "-",
+        instagram : "-",
+        picture : "picture.yntkts"
+    },
+    {
+        no : 23,
+        nis : "11907347",
+        name : "Muhammad Cahya Wiguna",
+        nickname : "-",
+        date_of_birth : "12/9/2003",
+        place_of_birth : "Bogor",
+        hobby : "-",
+        quote : "-",
+        message : "-",
+        instagram : "-",
+        picture : "picture.yntkts"
+    },
+    {
+        no : 30,
+        nis : "11907477",
+        name : "Ricky Erlangga Handoko",
+        nickname : "-",
+        date_of_birth : "7/10/2004",
+        place_of_birth : "Bogor",
+        hobby : "-",
+        quote : "-",
+        message : "-",
+        instagram : "-",
+        picture : "picture.yntkts"
+    },
     // {
+    //     no : null,
     //     nis : "",
     //     name : "",
     //     nickname : "",
@@ -378,5 +445,4 @@ const profiles =  [
     //     instagram : "",
     //     picture : "picture.yntkts"
     // },
-    //input per 21:35:44 10 april 2022
 ]
