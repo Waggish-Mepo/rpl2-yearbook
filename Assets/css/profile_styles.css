@@ -16,9 +16,6 @@ br {
   background-color: #1A1A40;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   font-size: 0.8rem;
 }

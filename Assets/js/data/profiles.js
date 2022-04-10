@@ -312,16 +312,53 @@ const profiles =  [
         picture : "picture.yntkts"
     },
     {
-        nis : "",
-        name : "",
-        nickname : "",
-        date_of_birth : "",
-        place_of_birth : "",
-        hobby : "",
-        quote : "",
-        message : "",
-        instagram : "",
+        nis : "11907248",
+        name : "Muhammad Rakean Jati Permana Kusumah Hidayat",
+        nickname : "mamatmanja",
+        date_of_birth : "7/14/2004",
+        place_of_birth : "Jakarta",
+        hobby : "Melukis dan Belajar Hal baru",
+        quote : "\"Saya siap belajar PTMT dan TIDAK mengikuti demo Senin 11 April 2022 \"",
+        message : "Banyak memori selama 3 tahun perjuangan dan juga ada impian besar yang menanti dimasa depan, semoga kelak kami bisa berkontribusi ke almamater kami, banyak talent diluar sana, tapi kami yang dipilih untuk berada disini berkesempatan mendapat ilmu terbaik (di Wikrama Bogor) Terimakasih untuk para pengajar semua, Salam, Semoga silaturahmi tetap terjaga, om swastiastu namo buddhaya salam kebajikan Walaikumsalam",
+        instagram : "@m.rakean",
         picture : "picture.yntkts"
     },
-    //input per 16:13:27 10 april 2022
+    {
+        nis : "11907281",
+        name : "Muhammad Haikal",
+        nickname : "Kale",
+        date_of_birth : "6/9/2004",
+        place_of_birth : "Bogor",
+        hobby : "Membaca dan Bernyanyi",
+        quote : "Bermimpilah sesuka hati, sebab itu hanyalah mimpi.",
+        message : "Tetap semangat, sukses selalu dan semoga selalu dilancarkan segala aktivitasnya.",
+        instagram : "@muhhaykale",
+        picture : "picture.yntkts"
+    },
+    {
+        nis : "-",
+        name : "Aditya Pramuji",
+        nickname : "Menyeng",
+        date_of_birth : "5/1/2003",
+        place_of_birth : "Bumi",
+        hobby : "Ngahuleng Tarik",
+        quote : "\"Fakta yang menyakitkan akan lebih baik dibandingkan fiksi yang menyenangkan\"",
+        message : "Salam dari Binjai",
+        instagram : "11906984",
+        picture : "picture.yntkts"
+    },
+    
+    // {
+    //     nis : "",
+    //     name : "",
+    //     nickname : "",
+    //     date_of_birth : "",
+    //     place_of_birth : "",
+    //     hobby : "",
+    //     quote : "",
+    //     message : "",
+    //     instagram : "",
+    //     picture : "picture.yntkts"
+    // },
+    //input per 21:35:44 10 april 2022
 ]
