@@ -28,3 +28,10 @@ by Keluarga Besar RPL 2 Gen 17 SMK Wikrama Bogor
  ```
 
  Sponsored By:
+
+<p align="center">
+<img src="https://github.com/Waggish-Mepo/rpl2-yearbook/blob/master/Assets/images/sponsors/mepo.png" width="100" />
+<img src="https://github.com/Waggish-Mepo/rpl2-yearbook/blob/master/Assets/images/sponsors/bin-mepo.svg" width="100" />
+<img src="https://github.com/Waggish-Mepo/rpl2-yearbook/blob/master/Assets/images/sponsors/rpl.jpg" width="100" />
+<img src="https://github.com/Waggish-Mepo/rpl2-yearbook/blob/master/Assets/images/sponsors/wk.png" width="100" />
+</p>
