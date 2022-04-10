@@ -1,3 +1,21 @@
+/*
+HOW TO SHOW IMAGE FROM GOOGLE DRIVE
+
+first, get your link
+https://drive.google.com/file/d/13O21HX86wUmbr8rs51RUwf3-af-XSOGB/view?usp=sharing
+
+then you'll get the ID of the file: 13O21HX86wUmbr8rs51RUwf3-af-XSOGB
+
+now paste it to this link
+https://drive.google.com/uc?export=view&id={id}
+
+then you'll get this link for the image source, paste it in picture property on profiles object
+https://drive.google.com/uc?export=view&id=13O21HX86wUmbr8rs51RUwf3-af-XSOGB
+
+*/
+
+
+
 const profiles =  [
     {
         nis : "11907601",

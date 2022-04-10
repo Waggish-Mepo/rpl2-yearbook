@@ -9,7 +9,7 @@ $(document).ready(function(){
         html += `
         <div class="slider-card">
             <div class="card-wrap p-4">
-                <img src="${profile.picture}" loading="lazy">
+                <img class="card-img" src="${profile.picture}" loading="lazy">
                 <p class="text-justify py-2">
                     <b>Nama:</b> ${profile.name}
                     <br>

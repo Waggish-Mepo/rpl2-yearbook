@@ -68,6 +68,11 @@ footer {
   font-size: 30px !important;
   z-index: 1;
 }
+
+.card-img {
+  object-fit: cover;
+}
+
 /*.owl-dots {
   text-align: center;
 }
