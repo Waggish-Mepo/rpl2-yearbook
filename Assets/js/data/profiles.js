@@ -23,7 +23,7 @@ const profiles =  [
         date_of_birth : "9/11/2004",
         place_of_birth : "Bogor",
         hobby : "Nongkrong",
-        quote : "Be better or be nothing arrow",
+        quote : "Be better or be nothing",
         message : "Manusia boleh berencana, tapi akhirnya saldo juga yang menentukan.",
         instagram : "@yogapratama11_",
         picture : "https://drive.google.com/uc?export=view&id=1OEZ4bgnHSSkR5vSpZdyKrjxh-_FyEP6H"
@@ -389,7 +389,7 @@ const profiles =  [
         hobby : "Ngahuleng Tarik",
         quote : "\"Fakta yang menyakitkan akan lebih baik dibandingkan fiksi yang menyenangkan\"",
         message : "Salam dari Binjai",
-        instagram : "11906984",
+        instagram : "@adityapramj",
         picture : "https://drive.google.com/uc?export=view&id=1_ZDtm8QYYNVchmA14ND6A1diQyFv85ju"
     },
     //nggak ngisi form
