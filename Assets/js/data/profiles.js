@@ -232,7 +232,7 @@ const profiles =  [
         place_of_birth : "Kasur ",
         hobby : "Demus",
         quote : "Semua manusia sama di mata ikan",
-        message : "Kalau nanti  zombie menyerbu kamu bakal aman, karena yang mereka incar adalah otak. Maaf ya, saya kalau lagi sendirian jarang ngobrol. Hehe :>",
+        message : "Kalau nanti  zombie menyerbu kamu bakal aman, karena yang mereka incar adalah otak. Hehe :>",
         instagram : "@silpia_nuruls",
         picture : "https://drive.google.com/uc?export=view&id=12AkAeyU7KavklFliZxlLQ1awgjRWolb7"
     },
