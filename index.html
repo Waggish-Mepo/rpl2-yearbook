@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="Assets/css/home.css" />
+
+    <title>Home - RPL2</title>
+  </head>
+  <body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+          <a class="navbar-brand" href="#">
+              <img src="Assets/images/meh_entahlah_copy.png" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          
+          <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="menu ms-auto">
+                <a class="nav-link active"href="#">Home</a>
+                <a class="nav-link" href="#">Profile</a>
+                <a class="nav-link" href="#">Album</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+    <!-- App -->
+    <div class="app container">
+        
+        <!-- Intro -->
+        <div class="intro d-flex align-items-center">
+
+            <div class="title">
+                <h1 class="text-fir">Memorial Album</h1>
+                <h2 class="text-sec">Rpl II</h2>
+                <a href="#" class="btn-profile">
+                    Lihat Profile
+                </a>
+            </div>
+
+            <div class="image">
+                <img src="Assets/images/intro.png" alt="">
+            </div>
+
+        </div>
+        <!-- End Intro -->
+
+        <!-- About -->
+        <div class="about d-flex mt-5 mb-5">
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xp7hAy80h7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="desc">
+                <h2 class="text-fir">Tentang RPL II</h2>
+                <p class="text-sec">Awal mulanya saling asing, kemudian saling asah, saling usung, hingga saling asuh. Kita pernah dekat, lekat, hingga hampir tamat. Ini RPL XII-2, jurusan pembangunan  berkedok coding. Penghuninya terdiri dari berbagai macam spesies. Ada yang telah mendaki puncak meniti karir, ada juga yang ingin memilih untuk memakai toga kelak,  ada yang hanya berjalan santai namun berproses, dan ada juga yang belum memutuskan untuk membuat arus, masih saja berenang mengikuti. Tak apa, sedari awal dalam diam pun kita berproses. Bedanya lebih lama saja. Semua jenis spesies itu berpadu-padan menjadi RPL XII-2. Jangan macam-macam, kita punya ketua pemuda pancasila dan juga (calon) polwan. Hehehe</p>
+            </div>
+
+        </div>
+        <!-- End About -->
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="wrapperBanner">
+                
+                <div class="textBanner">
+                    <h3>MEET OUR GLORIUS LEADER</h3>
+                    <h1>One of the members of the strongest organization in the world, Pemuda Pancasila</h1>
+                </div>
+
+                <div class="imagePreview">
+                    <img src="Assets/images/DSC06614-removebg 1.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <!-- End Banner -->
+
+        <!-- Content -->
+        <div class="content d-flex">
+            
+            <div class="desc">
+                <h2 class="text-fir">RPL II Membangun</h2>
+                <p class="text-sec">Cara terbaik untuk menyimpan rasa adalah mengabadikannya ke dalam sesuatu. Menaruhnya disana selamanya. Di lembaran bingkai berajut gelak tawa. Ini RPL XII-2, lulus wikrama siap membangun negeri, katanya. Tapi kami bukan tukang matrial, tak punya bahan untuk membangun negeri. Lebih baik membangun rumah tangga. Sepandai-pandainya tupai melompat, akhirnya bakal jatuh juga. Sejomblo-jomblonya kamu sekarang, akhirnya bakal menikah juga. Eits, tahan dulu. Kita cari cuan dulu ygy, hehe</p>
+            </div>
+
+            <div class="image">
+                <img src="Assets/images/content.png" alt="">
+            </div>
+
+        </div>
+        <!-- End Content -->
+
+    </div>
+    <!-- End App -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="text-center text-white">Copyright © 2022 RPL XII-2</p>
+    </footer>
+    <!-- End 
+        Footer -->
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="Assets/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/js/jquery-3.6.0.slim.min.js"></script>
+
+    <!-- Script -->
+    <script>
+
+        //Navbar Mobile Version Toggle triger
+        $(document).ready(function () {
+            $(".navbar-toggler").click(function(){
+                $(".navbar-collapse").toggleClass("showNavbar");
+            });
+        });
+
+        $(document).ready(function () {
+            $(document).on("scroll", onScroll);
+
+            //smoothscroll
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                $(document).off("scroll");
+
+                $('a').each(function () {
+                    $(this).removeClass('active');
+                })
+                $(this).addClass('active');
+
+                var target = this.hash,
+                    menu = target;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top+6
+                }, 700, 'swing', function () {
+                    window.location.hash = target;
+                    $(document).on("scroll", onScroll);
+                });
+            });
+        });
+
+        function onScroll(event){
+            var scrollPos = $(document).scrollTop();
+            $('#navbar a').each(function () {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('#navbar ul li a').removeClass("active");
+                    currLink.addClass("active");
+                }
+                else{
+                    currLink.removeClass("active");
+                }
+            });
+        }
+
+    </script>
+    <!-- End Script -->
+
+  </body>
+</html>

@@ -1,0 +1,859 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: Dillsburg City Demo;
+  src: url(../font/DillsburgCityDemoRegular.ttf);
+}
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, h3, h4, h5, h6, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 52px 80px rgba(0, 0, 0, 0.0139364), 0px 15.6765px 24.1177px rgba(0, 0, 0, 0.02), 0px 6.51121px 10.0172px rgba(0, 0, 0, 0.0260636), 0px 2.35498px 3.62304px rgba(0, 0, 0, 0.04);
+}
+
+.navbar .container .navbar-brand img {
+  width: 100%;
+  max-width: 120px;
+  transition: .5s;
+}
+
+.navbar .container .navbar-toggler {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .container .navbar-toggler:focus {
+  border-color: #1A1A40;
+  box-shadow: 0 0 0 0.25rem rgba(26, 26, 64, 0.7);
+}
+
+.navbar .container .navbar-toggler ion-icon {
+  font-size: 38px;
+}
+
+.navbar .container .navbar-collapse .navbar-nav {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .menu {
+  display: flex;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .menu .nav-link {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .container .navbar-brand img {
+    max-width: 62px;
+    transition: .5s;
+  }
+  .navbar .container .navbar-collapse {
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0px -70px 80px rgba(0, 0, 0, 0.0243888), 0px -21.103px 24.1177px rgba(0, 0, 0, 0.035), 0px -8.76509px 10.0172px rgba(0, 0, 0, 0.0456112), 0px -3.17016px 3.62304px rgba(0, 0, 0, 0.07);
+    top: 0;
+    width: 0%;
+    left: -350px;
+    height: 100%;
+    transition: 1s ease;
+    max-width: 350px;
+    padding: 2rem;
+    opacity: .4;
+  }
+  .navbar .container .navbar-collapse.showNavbar {
+    width: 60%;
+    left: 0px;
+    transition: 1s ease;
+    opacity: 1;
+  }
+  .navbar .container .navbar-collapse .navbar-nav {
+    width: 100%;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu {
+    flex-direction: column;
+    opacity: 1;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link {
+    padding: .7rem 0;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link.active {
+    color: #1A1A40;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .container .navbar-toggler {
+    display: none;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link {
+    padding: 0;
+    margin: .5rem 1.3rem;
+    position: relative;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link.active {
+    color: #1A1A40;
+    font-weight: 600;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    transform: translateX(50%);
+    background-color: #1A1A40;
+    transition: .3s ease;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link:hover::after {
+    width: 50%;
+    transition: .3s ease;
+  }
+}
+/* End Navbar */
+
+
+/* Intro */
+.intro{
+    padding: 8rem 0 4rem 0;
+}
+.intro .title{
+    width: 40%;
+    margin-top: -3rem;
+}
+.intro .title .text-fir{
+    font-size: 54px;
+    color: #1A1A40;
+    font-family: 'Dillsburg City Demo';
+}
+.intro .title .text-sec{
+    font-size: 44px;
+    color: #1A1A40;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+    font-family: 'Dillsburg City Demo';
+}
+.intro .title .btn-profile{
+    background-color: #1A1A40;
+    color: #ffffff;
+    padding: 0.8rem 4rem;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 0px rgba(26, 26, 64, 0.4);
+}
+.intro .image{
+    width: 60%;
+}
+.intro .image img{
+  width: 100%;
+}
+
+@media screen and (max-width: 1400px){
+  .intro .image{
+    width: 55%;
+  }
+  .intro .title{
+    width: 45%;
+  }
+  .intro .title .text-fir{
+    font-size: 50px;
+  }
+  .intro .title .text-sec{
+      font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .intro .image{
+    width: 55%;
+  }
+  .intro .title{
+    width: 45%;
+  }
+  .intro .title .text-fir{
+    font-size: 42px;
+  }
+  .intro .title .text-sec{
+      font-size: 32px;
+  }
+  .intro .title .btn-profile{
+    padding: 0.7rem 3.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .intro .image{
+    width: 55%;
+  }
+  .intro .title{
+    width: 45%;
+  }
+  .intro .title .text-fir{
+    font-size: 32px;
+  }
+  .intro .title .text-sec{
+      font-size: 22px;
+      margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+  .intro .title .btn-profile{
+    padding: 0.6rem 3rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .intro{
+    flex-direction: column-reverse;
+    padding: 6rem 0 4rem 0;
+  }
+  .intro .title{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro .title .text-fir{
+    font-size: 42px;
+  }
+  .intro .title .text-sec{
+      font-size: 30px;
+      margin-bottom: 3.5rem;
+      margin-top: 1.5rem;
+  }
+  .intro .title .btn-profile{
+      padding: 0.7rem 3.5rem;
+  }
+  .intro .image{
+      width: 100%;
+  }
+  .intro .image img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .intro .title .text-fir{
+    font-size: 38px;
+  }
+  .intro .title .text-sec{
+      font-size: 26px;
+      margin-bottom: 3.5rem;
+      margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 474px){
+  .intro .title .text-fir{
+    font-size: 32px;
+  }
+  .intro .title .text-sec{
+      font-size: 22px;
+      margin-bottom: 3.5rem;
+      margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .intro .title .text-fir{
+    font-size: 32px;
+  }
+  .intro .title .text-sec{
+      font-size: 22px;
+      margin-bottom: 3.5rem;
+      margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .intro{
+    padding: 4rem 0 0 0;
+}
+  .intro .title .text-fir{
+    font-size: 26px;
+  }
+  .intro .title .text-sec{
+      font-size: 18px;
+      margin-bottom: 2.5rem;
+      margin-top: 1.5rem;
+  }
+  .intro .title .btn-profile{
+    padding: 0.6rem 3rem;
+    font-size: 12px;
+  }
+}
+/* End Intro */
+
+
+/* About */
+.about{
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.about .video{
+  width: 50%;
+  margin-right: 1rem;
+}
+.about .video iframe{
+  width:100%;
+  height: 350px;
+  border-radius: 10px;
+}
+.about .desc{
+  width: 50%;
+  margin-left: 1rem;
+}
+.about .desc .text-fir{
+  color: #1A1A40;
+  padding-bottom: 0.5rem;
+  font-family: 'Dillsburg City Demo';
+}
+.about .desc .text-sec{
+  color: #535353;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1400px){
+  .about .desc .text-sec{
+    color: #535353;
+    font-size: 16.5px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .about{
+    padding-bottom: 2rem;
+  }
+  .about .desc{
+    width: 50%;
+    margin-left: 0.5rem;
+  }
+  .about .video iframe{
+    width:100%;
+    height: 250px;
+    border-radius: 10px;
+  }
+  .about .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 24px;
+  }
+  .about .desc .text-sec{
+    color: #535353;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about .desc{
+    width: 50%;
+  }
+  .about .video iframe{
+    width:100%;
+    height: 280px;
+    border-radius: 10px;
+  }
+  .about .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+  }
+  .about .desc .text-sec{
+    color: #535353;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .about{
+    flex-direction: column;
+  }
+  .about .video{
+    width: 100%;
+  }
+  .about .video iframe{
+    width:100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .about .desc{
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .about .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 28px;
+  }
+  .about .desc .text-sec{
+    color: #535353;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .about .video iframe{
+    width:100%;
+    height: 255px;
+    border-radius: 10px;
+  }
+  .about .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 26px;
+  }
+  .about .desc .text-sec{
+    color: #535353;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 474px){
+  .about .video iframe{
+    width:100%;
+    height: 220px;
+    border-radius: 10px;
+  }
+  .about .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 24px;
+  }
+  .about .desc .text-sec{
+    color: #535353;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .about .video iframe{
+    width:100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .about .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+  }
+  .about .desc .text-sec{
+    color: #535353;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about .video iframe{
+    width:100%;
+    height: 180px;
+    border-radius: 10px;
+  }
+  .about .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+  }
+  .about .desc .text-sec{
+    color: #535353;
+    font-size: 13px;
+  }
+}
+/* End About */
+
+
+/* Banner */
+.banner {
+  position: relative;
+  z-index: 3;
+}
+
+.banner .wrapperBanner {
+  background: url('../images/Banner.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+}
+
+.banner .wrapperBanner .imagePreview {
+  position: relative;
+  width: 110%;
+  top: -50px;
+  transition: .5s;
+}
+
+.banner .wrapperBanner .imagePreview img {
+  width: 100%;
+  transition: .5s;
+}
+
+.banner .wrapperBanner .textBanner {
+  padding: 0 3rem;
+  color: #fff;
+  transition: .5s;
+}
+
+.banner .wrapperBanner .textBanner h3{
+  font-weight: 400;
+}
+
+.banner .wrapperBanner .textBanner h1 {
+  font-weight: 600;
+  margin: 1rem  0;
+}
+
+@media screen and (max-width: 1400px){
+  .banner .wrapperBanner .imagePreview {
+    position: relative;
+    width: 120%;
+    top: -40px;
+    transition: .5s;
+  }
+  .banner .wrapperBanner .textBanner h3{
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .banner .wrapperBanner .textBanner h1 {
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .banner .wrapperBanner .imagePreview {
+    position: relative;
+    width: 120%;
+    top: -25px;
+    transition: .5s;
+  }
+  .banner .wrapperBanner .textBanner {
+    padding: 0 2rem;
+    color: #fff;
+    transition: .5s;
+  } 
+  .banner .wrapperBanner .textBanner h3{
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .banner .wrapperBanner .textBanner h1 {
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner .wrapperBanner {
+    background-size: cover;
+    border-radius: 25px;
+    padding: 3rem;
+    flex-direction: column;
+  }
+  .banner .wrapperBanner .imagePreview {
+    width: 100%;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .banner .wrapperBanner .imagePreview img {
+    max-width: 320px;
+  }
+  .banner .wrapperBanner .textBanner {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .banner .wrapperBanner {
+    background-size: cover;
+    border-radius: 25px;
+    padding: 3rem;
+    flex-direction: column;
+  }
+  .banner .wrapperBanner .imagePreview {
+    width: 100%;
+    top: 45px;
+    display: flex;
+    justify-content: center;
+  }
+  .banner .wrapperBanner .imagePreview img {
+    max-width: 320px;
+  }
+  .banner .wrapperBanner .textBanner {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .banner .wrapperBanner {
+    background-size: cover;
+    border-radius: 25px;
+    padding: 3rem;
+    flex-direction: column;
+  }
+  .banner .wrapperBanner .imagePreview {
+    width: 100%;
+    top: 45px;
+    display: flex;
+    justify-content: center;
+  }
+  .banner .wrapperBanner .imagePreview img {
+    max-width: 320px;
+  }
+  .banner .wrapperBanner .textBanner {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 474px){
+  .banner .wrapperBanner {
+    background-size: cover;
+    border-radius: 25px;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .banner .wrapperBanner .imagePreview {
+    width: 100%;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .banner .wrapperBanner .imagePreview img {
+    max-width: 320px;
+  }
+  .banner .wrapperBanner .textBanner {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .banner .wrapperBanner {
+    background-size: cover;
+    border-radius: 25px;
+    padding: 1.5rem;
+    flex-direction: column;
+  }
+  .banner .wrapperBanner .imagePreview {
+    width: 100%;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .banner .wrapperBanner .imagePreview img {
+    max-width: 320px;
+  }
+  .banner .wrapperBanner .textBanner {
+    padding: 0;
+    text-align: center;
+  }
+  .banner .wrapperBanner .textBanner h3{
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .banner .wrapperBanner .textBanner h1 {
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 24px;
+  }
+}
+/* End Banner */
+
+
+/* Content */
+.content{
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+.content .desc{
+  width: 50%;
+  margin-right: 1rem;
+}
+.content .desc .text-fir{
+  color: #1A1A40;
+  padding-bottom: 0.5rem;
+  font-family: 'Dillsburg City Demo';
+}
+.content .desc .text-sec{
+  color: #535353;
+  font-size: 18px;
+}
+.content .image{
+  width: 50%;
+  margin-left: 1rem;  
+  display: flex;
+  justify-content: center;
+}
+.content .image img{
+  width: 500px;
+  height: 300px;
+}
+
+@media screen and (max-width: 1200px){
+  .content .image img{
+    width: 450px;
+    height: 310px;
+  }
+  .content .desc .text-sec{
+    color: #535353;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .content .image{
+    margin-left: 0;  
+  }
+  .content .image img{
+    width: 310px;
+    height: 200px;
+  }
+  .content .desc .text-fir{
+    font-size: 20px;
+  }
+  .content .desc .text-sec{
+    color: #535353;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .content{
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .content .desc{
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .content .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 28px;
+  }
+  .content .desc .text-sec{
+    color: #535353;
+    font-size: 18px;
+  }
+  .content .image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content .image img{
+    margin-top: 1.5rem;
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .content{
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+  }
+  .content .image img{
+    margin-top: 1.5rem;
+    width: 450px;
+    height: 260px;
+  }
+  .content .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 26px;
+  }
+  .content .desc .text-sec{
+    color: #535353;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 474px){
+  .content .image img{
+    margin-top: 1.5rem;
+    width: 400px;
+    height: 220px;
+  }
+  .content .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 24px;
+  }
+  .content .desc .text-sec{
+    color: #535353;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .content .image img{
+    margin-top: 1.5rem;
+    width: 360px;
+    height: 200px;
+  }
+  .content .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+  }
+  .content .desc .text-sec{
+    color: #535353;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .content .image img{
+    margin-top: 1.5rem;
+    width: 340px;
+    height: 180px;
+  }
+  .content .desc .text-fir{
+    color: #1A1A40;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+  }
+  .content .desc .text-sec{
+    color: #535353;
+    font-size: 13px;
+  }
+}
+/* End Content */
+
+
+/* Footer */
+.footer{
+  background-color: #1A1A40;
+}
+.footer p{
+  padding: 1.5rem;
+}
+/* End Footer */
