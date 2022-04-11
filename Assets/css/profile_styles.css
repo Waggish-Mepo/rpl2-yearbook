@@ -45,8 +45,10 @@ footer {
   flex-direction: row;
 }
 .slider-card img {
+  min-width: 190px !important;
   max-width: 190px !important;
-  max-height: 250px !important;
+  min-height: 300px !important;
+  max-height: 300px !important;
 }
 .slider-card p {
   font-size: 0.8rem !important;

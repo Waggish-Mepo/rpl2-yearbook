@@ -10,7 +10,7 @@ $(document).ready(function(){
 
         html += `
         <div class="slider-card">
-            <div class="card-wrap p-4">
+            <div class="card-wrap p-4 align-items-center flex-column flex-sm-row justify-content-center">
                 <img class="card-img" src="${profile.picture}" loading="lazy">
                 <p class="text-justify py-2">
                     <b>Nama:</b> ${profile.name}
