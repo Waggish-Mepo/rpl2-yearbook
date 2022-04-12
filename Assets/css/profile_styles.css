@@ -16,9 +16,6 @@ br {
   background-color: #1A1A40;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 .slider {
@@ -47,8 +44,10 @@ footer {
   flex-direction: row;
 }
 .slider-card img {
+  min-width: 190px !important;
   max-width: 190px !important;
-  max-height: 250px !important;
+  min-height: 300px !important;
+  max-height: 300px !important;
 }
 .slider-card p {
   font-size: 0.8rem !important;
@@ -70,6 +69,11 @@ footer {
   font-size: 30px !important;
   z-index: 1;
 }
+
+.card-img {
+  object-fit: cover;
+}
+
 /*.owl-dots {
   text-align: center;
 }

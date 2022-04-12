@@ -1,17 +1,35 @@
+/*
+HOW TO SHOW IMAGE FROM GOOGLE DRIVE
+
+first, get your link
+https://drive.google.com/file/d/13O21HX86wUmbr8rs51RUwf3-af-XSOGB/view?usp=sharing
+
+then you'll get the ID of the file: 13O21HX86wUmbr8rs51RUwf3-af-XSOGB
+
+now paste it to this link
+https://drive.google.com/uc?export=view&id={id}
+
+then you'll get this link for the image source, paste it in picture property on profiles object
+https://drive.google.com/uc?export=view&id=13O21HX86wUmbr8rs51RUwf3-af-XSOGB
+
+*/
+
 const profiles =  [
     {
+        no : 32,
         nis : "11907601",
         name : "Yoga Pratama",
         nickname : "Agoy",
         date_of_birth : "9/11/2004",
         place_of_birth : "Bogor",
         hobby : "Nongkrong",
-        quote : "Be better or be nothing arrow",
+        quote : "Be better or be nothing",
         message : "Manusia boleh berencana, tapi akhirnya saldo juga yang menentukan.",
         instagram : "@yogapratama11_",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1OEZ4bgnHSSkR5vSpZdyKrjxh-_FyEP6H"
     },
     {
+        no : 28,
         nis : "11907455",
         name : "Rafi Fadhila Ramadhani ",
         nickname : "Bro",
@@ -21,9 +39,10 @@ const profiles =  [
         quote : "Udah jalanin aja",
         message : "Semoga sehat selalu untuk semuanya",
         instagram : "@rfkw12, @rafifadhila440",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1NxaC0q-vG0N-KeGWtMyctOuvbt8JPs82"
     },
     {
+        no: 21,
         nis : "11907323",
         name : "Muhamad Rendi Syahril Saputra",
         nickname : "Rendi",
@@ -33,9 +52,10 @@ const profiles =  [
         quote : "Tak perlu kata kata jika tidak diperlukan",
         message : "Panjang umur sehat selalu",
         instagram : "@rendisyhrl",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=17urx1JKG5Hiy__TrQVpTHWU9wrs1MDHU"
     },
     {
+        no: 6,
         nis : "11907084",
         name : "David Satya Wibisono",
         nickname : "David",
@@ -45,9 +65,10 @@ const profiles =  [
         quote : "tetaplah tersenyum walau mirip joker",
         message : "Ke mana pun kita pergi dan apa pun yang kita lakukan, hati dan kesuksesan akan selalu bersama kita",
         instagram : "@davdstya_",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1SCIiHR7a5Jo3kuriuL6Xl42fm5qdWK_-"
     },
     {
+        no : 9,
         nis : "11907154",
         name : "Fema Flamelina Putri",
         nickname : "Fema (make p juga bole la bole)",
@@ -57,9 +78,10 @@ const profiles =  [
         quote : "Tetap bangga menjadi pendek seperti kapten levi, cmiwiw.",
         message : "Bismillah dapet levi.",
         instagram : "@flmpt",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1SHc3y_If9B80EMHugQvTwMJzvFmu-dU3"
     },
     {
+        no : 8,
         nis : "11907096",
         name : "Devita Hasnasya Rahma",
         nickname : "devita",
@@ -69,9 +91,10 @@ const profiles =  [
         quote : "jika orang lain bisa maka aku belum tentu 😭🙏",
         message : "Dua tiga ikan pari \r\n Kasian crushnya gabisa dimiliki",
         instagram : "@dvt.hr",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1pUZInpXdI3FW9AuKR_iFPPtoUN1f19Ft"
     },
     {
+        no : 26,
         nis : "11907434",
         name : "Nurul Aviah",
         nickname : "av",
@@ -81,9 +104,10 @@ const profiles =  [
         quote : "Tetaplah berlari seperti di kejar anjing",
         message : "Mau pesen tapi takut ga di anter",
         instagram : "@nurullaviah",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=14YjxuLjoovEoH-ot4jq7ChX6fy6Nwp1V"
     },
     {
+        no : 31,
         nis : "11907545",
         name : "Siti Nur Alawiyah",
         nickname : "Alaw",
@@ -93,9 +117,10 @@ const profiles =  [
         quote : "Tidak ada wanita yg sabar, kecuali wanita indosiar",
         message : "Ucapan selamat emang menyenangkan, tapi tidak dengan ucapan \"selamat mengerjakan\"",
         instagram : "@snalwyhh",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1kPk10QtK8jWk9wocN5wP53V_aL2fcuCi"
     },
     {
+        no : 29,
         nis : "11907474",
         name : "Reski Junaidi Shalat",
         nickname : "-",
@@ -105,9 +130,10 @@ const profiles =  [
         quote : "Never try never know",
         message : "Semoga tanggal di kalendernya merah terus",
         instagram : "@reski.js",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1O2EvA48CJE-73Ol1VZeWMDgT2HJZECKG"
     },
     {
+        no : 20,
         nis : "11907305",
         name : "Muhamad Geovalza Valeriandi",
         nickname : "Ge-yo",
@@ -117,21 +143,23 @@ const profiles =  [
         quote : "\"No Surprises\"",
         message : "Hati hati di jalan",
         instagram : "@geovalza",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1v9CVPdk-jE13w75PUD5iXTqjwp21ENwE"
     },
     {
+        no : 12,
         nis : "11907239",
         name : "Muhamad Fadhil Mauladhani",
         nickname : "Kadang bapak sejarah, kadang bapak dosen tapi paling parah bapak pki sama bapak naji",
         date_of_birth : "5/16/2004",
         place_of_birth : "Bogor",
         hobby : "Memikirkan tujuan eksistensi manusia di dunia ini",
-        quote : "Per aspera ad astra, aquila non captat muscas",
+        quote : "Per aspera ad astra, aquila non captat muscas (gatau artinya apaan, keren aja gitu)",
         message : "Can i stay here for a while with all these good people? i don't wanna grow up.",
         instagram : "@altf4m8",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1CRo9PuypLffcIsFmpVnT5x4X165tMgqB"
     },
     {
+        no : 18,
         nis : "11907287",
         name : "Mochammad Nabil Hakm",
         nickname : "Nabil",
@@ -141,9 +169,10 @@ const profiles =  [
         quote : "Turu",
         message : "Turu",
         instagram : "@Hkmnabil",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1jdsAcGLK3geKUGLslz8R4Qh5zGqda_UJ"
     },
     {
+        no : 25,
         nis : "11907406",
         name : "Nalisa Vianti",
         nickname : "dipanggil woy jg nengok",
@@ -153,9 +182,10 @@ const profiles =  [
         quote : "selagi dia bisa knp hrs gua",
         message : "tetaplah menyerah jngn smngt fwen",
         instagram : "@nalisavv",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1m1DF7vNRs24zRoZVFqZvaI740DCA0kHf"
     },
     {
+        no : 3,
         nis : "11907021",
         name : "Amanda Agustin",
         nickname : "Manda",
@@ -165,9 +195,10 @@ const profiles =  [
         quote : "au ahhh puyeng",
         message : "semangat bestihhhh🔥🔥🔥",
         instagram : "@amndair_",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1Squj7TOQMnBTPwHli9HMSQBAkzgWTLIs"
     },
     {
+        no : 22,
         nis : "11907335",
         name : "Muhammad Abdurrasyid ",
         nickname : "Rasyid",
@@ -177,9 +208,10 @@ const profiles =  [
         quote : "Jika anda tidak menyukai sesuatu ubahlah, jika anda tidak bisa mengubahnya maka ubah sudut pandang anda",
         message : "Jangan lupa rehat",
         instagram : "@m.abdurrasyid24",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id={id}"
     },
     {
+        no : 1,
         nis : "11806920",
         name : "Suryo Slamet Mujahid Musyaffa",
         nickname : "Suryo",
@@ -189,9 +221,10 @@ const profiles =  [
         quote : "Life isn't that simple you fudge nuggets",
         message : "Jangan update Windows",
         instagram : "@suryomujahid",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1YePIUcI9x4uNCB6hmBR9JOH3p9NoINnw"
     },
     {
+        no : 27,
         nis : "11907436",
         name : "Nurul Silpia ",
         nickname : "Silpia",
@@ -199,11 +232,12 @@ const profiles =  [
         place_of_birth : "Kasur ",
         hobby : "Demus",
         quote : "Semua manusia sama di mata ikan",
-        message : "Kalau nanti  zombie menyerbu kamu bakal aman, karena yang mereka incar adalah otak. Maaf ya, saya kalau lagi sendirian jarang ngobrol. Hehe :>",
+        message : "Kalau nanti  zombie menyerbu kamu bakal aman, karena yang mereka incar adalah otak. Hehe :>",
         instagram : "@silpia_nuruls",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=12AkAeyU7KavklFliZxlLQ1awgjRWolb7"
     },
     {
+        no : 5,
         nis : "11907055",
         name : "Asya Meira Maharani Putri",
         nickname : "Sya Asya Syaruunn",
@@ -213,9 +247,10 @@ const profiles =  [
         quote : "Hidup adalah seni menggambar tanpa penghapus.",
         message : "Jangan hidup kyk Newton, kebanyakan gaya. Hehehehe . Semngt cari cuan bestie.",
         instagram : "@syamhrni_",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1hmFbxC-QiLuZoKHbulUvxR9bsqwUzKp3"
     },
     {
+        no : 4,
         nis : "11907029",
         name : "Andika Apriana",
         nickname : "Dik",
@@ -225,9 +260,10 @@ const profiles =  [
         quote : "Tetap menyerah jangan semangat!",
         message : "Sehat sehat selalu ya!",
         instagram : "@andikaapriana_",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1tML4KAJZL_PY-xUWlgZhKY6hSvafriJY"
     },
     {
+        no : 11,
         nis : "07",
         name : "Muhamad Agung Laksana Putra",
         nickname : "jhon",
@@ -237,9 +273,10 @@ const profiles =  [
         quote : "Bila hidup mu sulit, dan ingin normal, maka ganti lah kesulitan itu di pengaturan.",
         message : "\"Jika anda sudah memiliki pasangan, tolonglah jangan membina hubungan dengan orang lain, dan cobalah untuk setia dan menahan diri. \r\n Walaupun rumput tetangga lebih hijau, percayalah, walaupun rumput pasangan anda tidak hijau, setidaknya, masih lebat...\"",
         instagram : "@agunglksnptra_",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1iA-CbxSJahLTY9EnImWjxiecTxie-Ikg"
     },
     {
+        no : 14,
         nis : "11907257",
         name : "Muhammad Zain Quroisy",
         nickname : "Zein",
@@ -249,9 +286,10 @@ const profiles =  [
         quote : "Make it work, make it right, make it fast, for everyone, everything and girls😀",
         message : "Untuk chiko dan merlyn kucing ku tercinta jangan lupa untuk belajar silat",
         instagram : "@zainquraisy1644",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1jDk51_XXzWiGr1EU2sgkf7WW2MzHuTqj"
     },
     {
+        no : 7,
         nis : "11907092",
         name : "Desy Fajriani",
         nickname : "Desy kalau gak soya awoakaoak",
@@ -261,9 +299,10 @@ const profiles =  [
         quote : "Aku bukan pemalas. Aku sedang menjalankan mode hemat energi.",
         message : "Kapan bikin SIM cape jalan ke wikrama 😢",
         instagram : "@soyaaaaa_04",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1UelO5Gwq7t4HjZQ_W6GRMbwzfh6odGkm"
     },
     {
+        no : 16,
         nis : "11907266",
         name : "Maulana Ardiansyah ",
         nickname : "Bading",
@@ -273,9 +312,10 @@ const profiles =  [
         quote : "Jika kau lapar, maka makanlah",
         message : "Jawabannya ada di hati lanjut part 2",
         instagram : "@maulanaardi18_",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=10bJLwvgcVyhZj68nnoZ7yDeFW2IDKoD6"
     },
     {
+        no : 19,
         nis : "15151515",
         name : "Muhamad Dandi Nurrizky",
         nickname : "Danzzz",
@@ -285,9 +325,10 @@ const profiles =  [
         quote : "Seberat apapun pekerjaan akan terasa ringan jika tidak dikerjakan.",
         message : "Terimakasih telah berjuang untuk spp + jajan + semesteran.",
         instagram : "@dandinurrizky",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1uYDem7DwQU9ujXS4lJUh6yBgeX-UwQ0Y"
     },
     {
+        no : 10,
         nis : "176385337(2910)",
         name : "Hussein Ismail",
         nickname : "ɴᴇᴋᴏᴍᴀ",
@@ -297,9 +338,10 @@ const profiles =  [
         quote : "Mandi hanya untuk orang bau",
         message : "Tobat Kok Diplanning?!",
         instagram : "@husengaol",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=14le-N18NDPCjtbFRc3ihOX50KvPzcVo-"
     },
     {
+        no : 24,
         nis : "23",
         name : "Muhammad Shiddiq Priyono",
         nickname : "Zaw Phyo Aung ",
@@ -309,19 +351,98 @@ const profiles =  [
         quote : "Bùtóng de rén yǒu bùtóng de chénggōng",
         message : "\"For my mother, thank you for giving me everything \r \n 16,Waiting me\"",
         instagram : "@shiddiqpryn",
-        picture : "picture.yntkts"
+        picture : "https://drive.google.com/uc?export=view&id=1SZzM4FFe1op-a97Ppt4nl5RlCoSOZWab"
     },
     {
-        nis : "",
-        name : "",
-        nickname : "",
-        date_of_birth : "",
-        place_of_birth : "",
-        hobby : "",
-        quote : "",
-        message : "",
-        instagram : "",
-        picture : "picture.yntkts"
+        no : 13,
+        nis : "11907248",
+        name : "Muhammad Rakean Jati Permana Kusumah Hidayat",
+        nickname : "mamatmanja",
+        date_of_birth : "7/14/2004",
+        place_of_birth : "Jakarta",
+        hobby : "Melukis dan Belajar Hal baru",
+        quote : "\"Saya siap belajar PTMT dan TIDAK mengikuti demo Senin 11 April 2022 \"",
+        message : "Banyak memori selama 3 tahun perjuangan dan juga ada impian besar yang menanti dimasa depan, semoga kelak kami bisa berkontribusi ke almamater kami, banyak talent diluar sana, tapi kami yang dipilih untuk berada disini berkesempatan mendapat ilmu terbaik (di Wikrama Bogor) Terimakasih untuk para pengajar semua, Salam, Semoga silaturahmi tetap terjaga, om swastiastu namo buddhaya salam kebajikan Walaikumsalam",
+        instagram : "@m.rakean",
+        picture : "https://drive.google.com/uc?export=view&id=1m75iprEMEAonyF5hQhLiVTazjmcEUONp"
     },
-    //input per 16:13:27 10 april 2022
+    {
+        no : 17,
+        nis : "11907281",
+        name : "Muhammad Haikal",
+        nickname : "Kale",
+        date_of_birth : "6/9/2004",
+        place_of_birth : "Bogor",
+        hobby : "Membaca dan Bernyanyi",
+        quote : "Bermimpilah sesuka hati, sebab itu hanyalah mimpi.",
+        message : "Tetap semangat, sukses selalu dan semoga selalu dilancarkan segala aktivitasnya.",
+        instagram : "@muhhaykale",
+        picture : "https://drive.google.com/uc?export=view&id=1gkvNcYMWuk5Y0GgYTS8GA1rA7xVxGNia"
+    },
+    {
+        no : 2,
+        nis : "-",
+        name : "Aditya Pramuji",
+        nickname : "Menyeng",
+        date_of_birth : "5/1/2003",
+        place_of_birth : "Bumi",
+        hobby : "Ngahuleng Tarik",
+        quote : "\"Fakta yang menyakitkan akan lebih baik dibandingkan fiksi yang menyenangkan\"",
+        message : "Salam dari Binjai",
+        instagram : "@adityapramj",
+        picture : "https://drive.google.com/uc?export=view&id=1_ZDtm8QYYNVchmA14ND6A1diQyFv85ju"
+    },
+    //nggak ngisi form
+    {
+        no : 15,
+        nis : "11907260",
+        name : "Marhaensalenindo Komara",
+        nickname : "-",
+        date_of_birth : "5/23/2004",
+        place_of_birth : "Tangerang",
+        hobby : "-",
+        quote : "-",
+        message : "-",
+        instagram : "-",
+        picture : "https://drive.google.com/uc?export=view&id={id}"
+    },
+    {
+        no : 23,
+        nis : "11907347",
+        name : "Muhammad Cahya Wiguna",
+        nickname : "Cahya",
+        date_of_birth : "12/9/2003",
+        place_of_birth : "Bogor",
+        hobby : "Banyak",
+        quote : "manifesting magic",
+        message : "school is actually not that bad, but the people.",
+        instagram : "@cayawiguna",
+        picture : "https://drive.google.com/uc?export=view&id=1Qku1rqdqf04uQp_jQ_jOjDH33ZysooMC"
+    },
+    {
+        no : 30,
+        nis : "11907477",
+        name : "Ricky Erlangga Handoko",
+        nickname : "-",
+        date_of_birth : "7/10/2004",
+        place_of_birth : "Bogor",
+        hobby : "-",
+        quote : "-",
+        message : "-",
+        instagram : "-",
+        picture : "https://drive.google.com/uc?export=view&id={id}"
+    },
+    // {
+    //     no : null,
+    //     nis : "",
+    //     name : "",
+    //     nickname : "",
+    //     date_of_birth : "",
+    //     place_of_birth : "",
+    //     hobby : "",
+    //     quote : "",
+    //     message : "",
+    //     instagram : "",
+    //     picture : "https://drive.google.com/uc?export=view&id={id}"
+    // },
 ]
