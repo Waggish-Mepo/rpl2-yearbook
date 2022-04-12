@@ -208,7 +208,7 @@ const profiles =  [
         quote : "Jika anda tidak menyukai sesuatu ubahlah, jika anda tidak bisa mengubahnya maka ubah sudut pandang anda",
         message : "Jangan lupa rehat",
         instagram : "@m.abdurrasyid24",
-        picture : "https://drive.google.com/uc?export=view&id={id}"
+        picture : "https://drive.google.com/uc?export=view&id=1S1xUpGFyOHbkj-QV2a-12dTVJLm7Tofu"
     },
     {
         no : 1,
@@ -430,7 +430,7 @@ const profiles =  [
         quote : "-",
         message : "-",
         instagram : "-",
-        picture : "https://drive.google.com/uc?export=view&id={id}"
+        picture : "https://drive.google.com/uc?export=view&id=1goVgHsiXnTXTzX35FNn7reY288ESg-G0"
     },
     // {
     //     no : null,
