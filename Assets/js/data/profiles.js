@@ -410,13 +410,13 @@ const profiles =  [
         no : 23,
         nis : "11907347",
         name : "Muhammad Cahya Wiguna",
-        nickname : "-",
+        nickname : "Cahya",
         date_of_birth : "12/9/2003",
         place_of_birth : "Bogor",
-        hobby : "-",
-        quote : "-",
-        message : "-",
-        instagram : "-",
+        hobby : "Banyak",
+        quote : "manifesting magic",
+        message : "school is actually not that bad, but the people.",
+        instagram : "@cayawiguna",
         picture : "https://drive.google.com/uc?export=view&id=1Qku1rqdqf04uQp_jQ_jOjDH33ZysooMC"
     },
     {
