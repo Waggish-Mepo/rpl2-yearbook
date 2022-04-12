@@ -8,9 +8,43 @@
 		<link rel="image_src" href="Assets/images/favicon.svg" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="Assets/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/css/profile_styles.css">
+
   </head>
 
   <body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <img src="Assets/images/meh_entahlah_copy.png" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <div class="menu ms-auto">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="profile.html">Profile</a>
+        <a class="nav-link active" href="album.html">Album</a>
+      </div>
+
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <!--End Navbar-->
+
     <section id="album-grid" class="container-fluid">
       <div class="row">
         <!-- First Row -->
@@ -59,6 +93,14 @@
       </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="text-center text-white">Copyright © 2022 RPL XII-2</p>
+  </footer>
+  <!-- End 
+      Footer -->
+
+
     <!-- Bootstrap JS Bundle -->
     <script src="Assets/js/bootstrap.bundle.min.js"></script>
     <script src="Assets/js/jquery-3.6.0.slim.min.js"></script>
@@ -69,5 +111,60 @@
         $('#img-preview > div > div > div > img').attr('src', img);
       });
     </script>
+
+    
+  <!-- Script -->
+  <script>
+
+    //Navbar Mobile Version Toggle triger
+    $(document).ready(function () {
+        $(".navbar-toggler").click(function(){
+            $(".navbar-collapse").toggleClass("showNavbar");
+        });
+    });
+
+    $(document).ready(function () {
+        $(document).on("scroll", onScroll);
+
+        //smoothscroll
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+
+            $('a').each(function () {
+                $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+
+            var target = this.hash,
+                menu = target;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top+6
+            }, 700, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        });
+    });
+
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+        $('#navbar a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#navbar ul li a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+        });
+    }
+
+</script>
+<!-- End Script -->
+
   </body>
 </html>
