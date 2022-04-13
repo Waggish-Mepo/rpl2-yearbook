@@ -245,7 +245,7 @@ const profiles =  [
         place_of_birth : "Bogor",
         hobby : "Yang pasti bukan ngoding",
         quote : "Hidup adalah seni menggambar tanpa penghapus.",
-        message : "Jangan hidup kyk Newton, kebanyakan gaya. Hehehehe . Semngt cari cuan bestie.",
+        message : "Semngt cari cuan bestie.",
         instagram : "@syamhrni_",
         picture : "https://drive.google.com/uc?export=view&id=1hmFbxC-QiLuZoKHbulUvxR9bsqwUzKp3"
     },
@@ -269,9 +269,9 @@ const profiles =  [
         nickname : "jhon",
         date_of_birth : "12/18/0170",
         place_of_birth : "bengkel ahass",
-        hobby : "mencari janda perawan",
+        hobby : "mengincar instagram ade kelas",
         quote : "Bila hidup mu sulit, dan ingin normal, maka ganti lah kesulitan itu di pengaturan.",
-        message : "\"Jika anda sudah memiliki pasangan, tolonglah jangan membina hubungan dengan orang lain, dan cobalah untuk setia dan menahan diri. \r\n Walaupun rumput tetangga lebih hijau, percayalah, walaupun rumput pasangan anda tidak hijau, setidaknya, masih lebat...\"",
+        message : "\"mucia gracias afisiosos este para vostros <strong>SIUUUUUUUUUUU</strong>\"",
         instagram : "@agunglksnptra_",
         picture : "https://drive.google.com/uc?export=view&id=1iA-CbxSJahLTY9EnImWjxiecTxie-Ikg"
     },
@@ -404,7 +404,7 @@ const profiles =  [
         quote : "-",
         message : "-",
         instagram : "-",
-        picture : "https://drive.google.com/uc?export=view&id={id}"
+        picture : "Assets/images/missing.png"
     },
     {
         no : 23,
