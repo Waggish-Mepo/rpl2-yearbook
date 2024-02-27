@@ -7,10 +7,10 @@ https://drive.google.com/file/d/13O21HX86wUmbr8rs51RUwf3-af-XSOGB/view?usp=shari
 then you'll get the ID of the file: 13O21HX86wUmbr8rs51RUwf3-af-XSOGB
 
 now paste it to this link
-https://drive.google.com/uc?export=view&id={id}
+https://drive.google.com/thumbnail?id={id}
 
 then you'll get this link for the image source, paste it in picture property on profiles object
-https://drive.google.com/uc?export=view&id=13O21HX86wUmbr8rs51RUwf3-af-XSOGB
+https://drive.google.com/thumbnail?id=13O21HX86wUmbr8rs51RUwf3-af-XSOGB
 
 */
 
@@ -26,7 +26,7 @@ const profiles =  [
         quote : "Be better or be nothing",
         message : "Manusia boleh berencana, tapi akhirnya saldo juga yang menentukan.",
         instagram : "@yogapratama11_",
-        picture : "https://drive.google.com/uc?export=view&id=1OEZ4bgnHSSkR5vSpZdyKrjxh-_FyEP6H"
+        picture : "https://drive.google.com/thumbnail?id=1OEZ4bgnHSSkR5vSpZdyKrjxh-_FyEP6H&sz=s4000"
     },
     {
         no : 28,
@@ -39,7 +39,7 @@ const profiles =  [
         quote : "Udah jalanin aja",
         message : "Semoga sehat selalu untuk semuanya",
         instagram : "@rfkw12, @rafifadhila440",
-        picture : "https://drive.google.com/uc?export=view&id=1NxaC0q-vG0N-KeGWtMyctOuvbt8JPs82"
+        picture : "https://drive.google.com/thumbnail?id=1NxaC0q-vG0N-KeGWtMyctOuvbt8JPs82&sz=s4000"
     },
     {
         no: 21,
@@ -52,7 +52,7 @@ const profiles =  [
         quote : "Tak perlu kata kata jika tidak diperlukan",
         message : "Panjang umur sehat selalu",
         instagram : "@rendisyhrl",
-        picture : "https://drive.google.com/uc?export=view&id=17urx1JKG5Hiy__TrQVpTHWU9wrs1MDHU"
+        picture : "https://drive.google.com/thumbnail?id=17urx1JKG5Hiy__TrQVpTHWU9wrs1MDHU&sz=s4000"
     },
     {
         no: 6,
@@ -65,7 +65,7 @@ const profiles =  [
         quote : "tetaplah tersenyum walau mirip joker",
         message : "Ke mana pun kita pergi dan apa pun yang kita lakukan, hati dan kesuksesan akan selalu bersama kita",
         instagram : "@davdstya_",
-        picture : "https://drive.google.com/uc?export=view&id=1SCIiHR7a5Jo3kuriuL6Xl42fm5qdWK_-"
+        picture : "https://drive.google.com/thumbnail?id=1SCIiHR7a5Jo3kuriuL6Xl42fm5qdWK_-&sz=s4000"
     },
     {
         no : 9,
@@ -78,7 +78,7 @@ const profiles =  [
         quote : "Tetap bangga menjadi pendek seperti kapten levi, cmiwiw.",
         message : "Bismillah dapet levi.",
         instagram : "@flmpt",
-        picture : "https://drive.google.com/uc?export=view&id=1SHc3y_If9B80EMHugQvTwMJzvFmu-dU3"
+        picture : "https://drive.google.com/thumbnail?id=1SHc3y_If9B80EMHugQvTwMJzvFmu-dU3&sz=s4000"
     },
     {
         no : 8,
@@ -91,7 +91,7 @@ const profiles =  [
         quote : "jika orang lain bisa maka aku belum tentu 😭🙏",
         message : "Dua tiga ikan pari \r\n Kasian crushnya gabisa dimiliki",
         instagram : "@dvt.hr",
-        picture : "https://drive.google.com/uc?export=view&id=1pUZInpXdI3FW9AuKR_iFPPtoUN1f19Ft"
+        picture : "https://drive.google.com/thumbnail?id=1pUZInpXdI3FW9AuKR_iFPPtoUN1f19Ft&sz=s4000"
     },
     {
         no : 26,
@@ -104,7 +104,7 @@ const profiles =  [
         quote : "Tetaplah berlari seperti di kejar anjing",
         message : "Mau pesen tapi takut ga di anter",
         instagram : "@nurullaviah",
-        picture : "https://drive.google.com/uc?export=view&id=14YjxuLjoovEoH-ot4jq7ChX6fy6Nwp1V"
+        picture : "https://drive.google.com/thumbnail?id=14YjxuLjoovEoH-ot4jq7ChX6fy6Nwp1V&sz=s4000"
     },
     {
         no : 31,
@@ -117,7 +117,7 @@ const profiles =  [
         quote : "Tidak ada wanita yg sabar, kecuali wanita indosiar",
         message : "Ucapan selamat emang menyenangkan, tapi tidak dengan ucapan \"selamat mengerjakan\"",
         instagram : "@snalwyhh",
-        picture : "https://drive.google.com/uc?export=view&id=1kPk10QtK8jWk9wocN5wP53V_aL2fcuCi"
+        picture : "https://drive.google.com/thumbnail?id=1kPk10QtK8jWk9wocN5wP53V_aL2fcuCi&sz=s4000"
     },
     {
         no : 29,
@@ -130,7 +130,7 @@ const profiles =  [
         quote : "Never try never know",
         message : "Semoga tanggal di kalendernya merah terus",
         instagram : "@reski.js",
-        picture : "https://drive.google.com/uc?export=view&id=1O2EvA48CJE-73Ol1VZeWMDgT2HJZECKG"
+        picture : "https://drive.google.com/thumbnail?id=1O2EvA48CJE-73Ol1VZeWMDgT2HJZECKG&sz=s4000"
     },
     {
         no : 20,
@@ -143,7 +143,7 @@ const profiles =  [
         quote : "\"No Surprises\"",
         message : "Hati hati di jalan",
         instagram : "@geovalza",
-        picture : "https://drive.google.com/uc?export=view&id=1v9CVPdk-jE13w75PUD5iXTqjwp21ENwE"
+        picture : "https://drive.google.com/thumbnail?id=1v9CVPdk-jE13w75PUD5iXTqjwp21ENwE&sz=s4000"
     },
     {
         no : 12,
@@ -156,7 +156,7 @@ const profiles =  [
         quote : "Per aspera ad astra, aquila non captat muscas (gatau artinya apaan, keren aja gitu)",
         message : "Can i stay here for a while with all these good people? i don't wanna grow up.",
         instagram : "@altf4m8",
-        picture : "https://drive.google.com/uc?export=view&id=1CRo9PuypLffcIsFmpVnT5x4X165tMgqB"
+        picture : "https://drive.google.com/thumbnail?id=1CRo9PuypLffcIsFmpVnT5x4X165tMgqB&sz=s4000"
     },
     {
         no : 18,
@@ -169,7 +169,7 @@ const profiles =  [
         quote : "Turu",
         message : "Turu",
         instagram : "@Hkmnabil",
-        picture : "https://drive.google.com/uc?export=view&id=1jdsAcGLK3geKUGLslz8R4Qh5zGqda_UJ"
+        picture : "https://drive.google.com/thumbnail?id=1jdsAcGLK3geKUGLslz8R4Qh5zGqda_UJ&sz=s4000"
     },
     {
         no : 25,
@@ -182,7 +182,7 @@ const profiles =  [
         quote : "selagi dia bisa knp hrs gua",
         message : "tetaplah menyerah jngn smngt fwen",
         instagram : "@nalisavv",
-        picture : "https://drive.google.com/uc?export=view&id=1m1DF7vNRs24zRoZVFqZvaI740DCA0kHf"
+        picture : "https://drive.google.com/thumbnail?id=1m1DF7vNRs24zRoZVFqZvaI740DCA0kHf&sz=s4000"
     },
     {
         no : 3,
@@ -195,7 +195,7 @@ const profiles =  [
         quote : "au ahhh puyeng",
         message : "semangat bestihhhh🔥🔥🔥",
         instagram : "@amndair_",
-        picture : "https://drive.google.com/uc?export=view&id=1Squj7TOQMnBTPwHli9HMSQBAkzgWTLIs"
+        picture : "https://drive.google.com/thumbnail?id=1Squj7TOQMnBTPwHli9HMSQBAkzgWTLIs&sz=s4000"
     },
     {
         no : 22,
@@ -208,7 +208,7 @@ const profiles =  [
         quote : "Jika anda tidak menyukai sesuatu ubahlah, jika anda tidak bisa mengubahnya maka ubah sudut pandang anda",
         message : "Jangan lupa rehat",
         instagram : "@m.abdurrasyid24",
-        picture : "https://drive.google.com/uc?export=view&id=1S1xUpGFyOHbkj-QV2a-12dTVJLm7Tofu"
+        picture : "https://drive.google.com/thumbnail?id=1S1xUpGFyOHbkj-QV2a-12dTVJLm7Tofu&sz=s4000"
     },
     {
         no : 1,
@@ -221,7 +221,7 @@ const profiles =  [
         quote : "Life isn't that simple you fudge nuggets",
         message : "Jangan update Windows",
         instagram : "@suryomujahid",
-        picture : "https://drive.google.com/uc?export=view&id=1YePIUcI9x4uNCB6hmBR9JOH3p9NoINnw"
+        picture : "https://drive.google.com/thumbnail?id=1YePIUcI9x4uNCB6hmBR9JOH3p9NoINnw&sz=s4000"
     },
     {
         no : 27,
@@ -234,7 +234,7 @@ const profiles =  [
         quote : "Semua manusia sama di mata ikan",
         message : "Kalau nanti  zombie menyerbu kamu bakal aman, karena yang mereka incar adalah otak. Hehe :>",
         instagram : "@silpia_nuruls",
-        picture : "https://drive.google.com/uc?export=view&id=12AkAeyU7KavklFliZxlLQ1awgjRWolb7"
+        picture : "https://drive.google.com/thumbnail?id=12AkAeyU7KavklFliZxlLQ1awgjRWolb7&sz=s4000"
     },
     {
         no : 5,
@@ -247,7 +247,7 @@ const profiles =  [
         quote : "Hidup adalah seni menggambar tanpa penghapus.",
         message : "Semngt cari cuan bestie.",
         instagram : "@syamhrni_",
-        picture : "https://drive.google.com/uc?export=view&id=1hmFbxC-QiLuZoKHbulUvxR9bsqwUzKp3"
+        picture : "https://drive.google.com/thumbnail?id=1hmFbxC-QiLuZoKHbulUvxR9bsqwUzKp3&sz=s4000"
     },
     {
         no : 4,
@@ -260,7 +260,7 @@ const profiles =  [
         quote : "Tetap menyerah jangan semangat!",
         message : "Sehat sehat selalu ya!",
         instagram : "@andikaapriana_",
-        picture : "https://drive.google.com/uc?export=view&id=1tML4KAJZL_PY-xUWlgZhKY6hSvafriJY"
+        picture : "https://drive.google.com/thumbnail?id=1tML4KAJZL_PY-xUWlgZhKY6hSvafriJY&sz=s4000"
     },
     {
         no : 11,
@@ -273,7 +273,7 @@ const profiles =  [
         quote : "Bila hidup mu sulit, dan ingin normal, maka ganti lah kesulitan itu di pengaturan.",
         message : "\"mucia gracias afisiosos este para vostros <strong>SIUUUUUUUUUUU</strong>\"",
         instagram : "@agunglksnptra_",
-        picture : "https://drive.google.com/uc?export=view&id=1iA-CbxSJahLTY9EnImWjxiecTxie-Ikg"
+        picture : "https://drive.google.com/thumbnail?id=1iA-CbxSJahLTY9EnImWjxiecTxie-Ikg&sz=s4000"
     },
     {
         no : 14,
@@ -286,7 +286,7 @@ const profiles =  [
         quote : "Make it work, make it right, make it fast, for everyone, everything and girls😀",
         message : "Untuk chiko dan merlyn kucing ku tercinta jangan lupa untuk belajar silat",
         instagram : "@zainquraisy1644",
-        picture : "https://drive.google.com/uc?export=view&id=1jDk51_XXzWiGr1EU2sgkf7WW2MzHuTqj"
+        picture : "https://drive.google.com/thumbnail?id=1jDk51_XXzWiGr1EU2sgkf7WW2MzHuTqj&sz=s4000"
     },
     {
         no : 7,
@@ -299,7 +299,7 @@ const profiles =  [
         quote : "Aku bukan pemalas. Aku sedang menjalankan mode hemat energi.",
         message : "Kapan bikin SIM cape jalan ke wikrama 😢",
         instagram : "@soyaaaaa_04",
-        picture : "https://drive.google.com/uc?export=view&id=1UelO5Gwq7t4HjZQ_W6GRMbwzfh6odGkm"
+        picture : "https://drive.google.com/thumbnail?id=1UelO5Gwq7t4HjZQ_W6GRMbwzfh6odGkm&sz=s4000"
     },
     {
         no : 16,
@@ -312,7 +312,7 @@ const profiles =  [
         quote : "Jika kau lapar, maka makanlah",
         message : "Jawabannya ada di hati lanjut part 2",
         instagram : "@maulanaardi18_",
-        picture : "https://drive.google.com/uc?export=view&id=10bJLwvgcVyhZj68nnoZ7yDeFW2IDKoD6"
+        picture : "https://drive.google.com/thumbnail?id=10bJLwvgcVyhZj68nnoZ7yDeFW2IDKoD6&sz=s4000"
     },
     {
         no : 19,
@@ -325,7 +325,7 @@ const profiles =  [
         quote : "Seberat apapun pekerjaan akan terasa ringan jika tidak dikerjakan.",
         message : "Terimakasih telah berjuang untuk spp + jajan + semesteran.",
         instagram : "@dandinurrizky",
-        picture : "https://drive.google.com/uc?export=view&id=1uYDem7DwQU9ujXS4lJUh6yBgeX-UwQ0Y"
+        picture : "https://drive.google.com/thumbnail?id=1uYDem7DwQU9ujXS4lJUh6yBgeX-UwQ0Y&sz=s4000"
     },
     {
         no : 10,
@@ -338,7 +338,7 @@ const profiles =  [
         quote : "Mandi hanya untuk orang bau",
         message : "Tobat Kok Diplanning?!",
         instagram : "@husengaol",
-        picture : "https://drive.google.com/uc?export=view&id=14le-N18NDPCjtbFRc3ihOX50KvPzcVo-"
+        picture : "https://drive.google.com/thumbnail?id=14le-N18NDPCjtbFRc3ihOX50KvPzcVo-&sz=s4000"
     },
     {
         no : 24,
@@ -351,7 +351,7 @@ const profiles =  [
         quote : "Bùtóng de rén yǒu bùtóng de chénggōng",
         message : "\"For my mother, thank you for giving me everything \r \n 16,Waiting me\"",
         instagram : "@shiddiqpryn",
-        picture : "https://drive.google.com/uc?export=view&id=1SZzM4FFe1op-a97Ppt4nl5RlCoSOZWab"
+        picture : "https://drive.google.com/thumbnail?id=1SZzM4FFe1op-a97Ppt4nl5RlCoSOZWab&sz=s4000"
     },
     {
         no : 13,
@@ -364,7 +364,7 @@ const profiles =  [
         quote : "\"Saya siap belajar PTMT dan TIDAK mengikuti demo Senin 11 April 2022 \"",
         message : "Banyak memori selama 3 tahun perjuangan dan juga ada impian besar yang menanti dimasa depan, semoga kelak kami bisa berkontribusi ke almamater kami, banyak talent diluar sana, tapi kami yang dipilih untuk berada disini berkesempatan mendapat ilmu terbaik (di Wikrama Bogor) Terimakasih untuk para pengajar semua, Salam, Semoga silaturahmi tetap terjaga, om swastiastu namo buddhaya salam kebajikan Walaikumsalam",
         instagram : "@m.rakean",
-        picture : "https://drive.google.com/uc?export=view&id=1m75iprEMEAonyF5hQhLiVTazjmcEUONp"
+        picture : "https://drive.google.com/thumbnail?id=1m75iprEMEAonyF5hQhLiVTazjmcEUONp&sz=s4000"
     },
     {
         no : 17,
@@ -377,7 +377,7 @@ const profiles =  [
         quote : "Bermimpilah sesuka hati, sebab itu hanyalah mimpi.",
         message : "Tetap semangat, sukses selalu dan semoga selalu dilancarkan segala aktivitasnya.",
         instagram : "@muhhaykale",
-        picture : "https://drive.google.com/uc?export=view&id=1gkvNcYMWuk5Y0GgYTS8GA1rA7xVxGNia"
+        picture : "https://drive.google.com/thumbnail?id=1gkvNcYMWuk5Y0GgYTS8GA1rA7xVxGNia&sz=s4000"
     },
     {
         no : 2,
@@ -390,7 +390,7 @@ const profiles =  [
         quote : "\"Fakta yang menyakitkan akan lebih baik dibandingkan fiksi yang menyenangkan\"",
         message : "Salam dari Binjai",
         instagram : "@adityapramj",
-        picture : "https://drive.google.com/uc?export=view&id=1_ZDtm8QYYNVchmA14ND6A1diQyFv85ju"
+        picture : "https://drive.google.com/thumbnail?id=1_ZDtm8QYYNVchmA14ND6A1diQyFv85ju&sz=s4000"
     },
     //nggak ngisi form
     {
@@ -404,7 +404,7 @@ const profiles =  [
         quote : "-",
         message : "-",
         instagram : "-",
-        picture : "Assets/images/missing.png"
+        picture : "Assets/images/missing.png&sz=s4000"
     },
     {
         no : 23,
@@ -417,7 +417,7 @@ const profiles =  [
         quote : "manifesting magic",
         message : "school is actually not that bad, but the people.",
         instagram : "@cayawiguna",
-        picture : "https://drive.google.com/uc?export=view&id=1Qku1rqdqf04uQp_jQ_jOjDH33ZysooMC"
+        picture : "https://drive.google.com/thumbnail?id=1Qku1rqdqf04uQp_jQ_jOjDH33ZysooMC&sz=s4000"
     },
     {
         no : 30,
@@ -430,7 +430,7 @@ const profiles =  [
         quote : "-",
         message : "-",
         instagram : "-",
-        picture : "https://drive.google.com/uc?export=view&id=1goVgHsiXnTXTzX35FNn7reY288ESg-G0"
+        picture : "https://drive.google.com/thumbnail?id=1goVgHsiXnTXTzX35FNn7reY288ESg-G0&sz=s4000"
     },
     // {
     //     no : null,
@@ -443,6 +443,6 @@ const profiles =  [
     //     quote : "",
     //     message : "",
     //     instagram : "",
-    //     picture : "https://drive.google.com/uc?export=view&id={id}"
+    //     picture : "https://drive.google.com/thumbnail?id={id}"
     // },
 ]
