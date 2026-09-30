@@ -151,6 +151,22 @@
     ).observe(el);
   };
 
+  // Small status message at the bottom of the screen (announced to screen readers).
+  var toastEl = null;
+  var toastTimer = 0;
+  YB.toast = function (text) {
+    if (!toastEl) {
+      toastEl = YB.el("p", { class: "toast", role: "status" });
+      doc.body.appendChild(toastEl);
+    }
+    toastEl.textContent = text;
+    toastEl.classList.add("is-on");
+    win.clearTimeout(toastTimer);
+    toastTimer = win.setTimeout(function () {
+      toastEl.classList.remove("is-on");
+    }, 2600);
+  };
+
   YB.students = function () {
     return (win.YB_STUDENTS || []).slice().sort(function (a, b) {
       return a.no - b.no;
