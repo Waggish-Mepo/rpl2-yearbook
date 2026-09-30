@@ -12,8 +12,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
+import { fileURLToPath } from "node:url";
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const IMG = path.join(ROOT, "Assets/images");
 const OUT = path.join(IMG, "opt");
 fs.mkdirSync(OUT, { recursive: true });

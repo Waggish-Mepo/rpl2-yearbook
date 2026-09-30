@@ -66,8 +66,8 @@
     var img = YB.photoImg(s.photo, { widths: [400, 800], sizes: "(min-width: 64rem) 200px, 46vw", alt: "" });
     if (img) frame.appendChild(img);
     else frame.classList.add("is-missing");
-    var label = s.name + (s.nickname ? ", alias " + s.nickname : "") + ", absen " + s.no;
-    var btn = YB.el("button", { class: "cast-card__btn", type: "button", "aria-haspopup": "dialog", "aria-label": label, "data-no": s.no }, [
+    // Accessible name comes from the visible text (nickname, name, number) — WCAG 2.5.3.
+    var btn = YB.el("button", { class: "cast-card__btn", type: "button", "aria-haspopup": "dialog", "data-no": s.no }, [
       frame,
       YB.el("span", { class: "cast-card__nick", text: shortNick(s) }),
       YB.el("span", { class: "cast-card__name", text: s.name }),

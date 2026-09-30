@@ -11,9 +11,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
-import { pathToFileURL } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 let failures = 0;
 const ok = (msg) => console.log("✓ " + msg);
 const bad = (msg) => {

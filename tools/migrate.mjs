@@ -20,8 +20,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
+import { fileURLToPath } from "node:url";
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.resolve(process.argv[2] || path.join(ROOT, "Assets/js/data/profiles.js"));
 const OUT_PUBLIC = path.join(ROOT, "Assets/js/data/students.js");
 const OUT_PRIVATE = path.join(ROOT, "private/vault.plain.json");

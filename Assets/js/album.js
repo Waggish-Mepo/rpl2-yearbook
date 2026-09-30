@@ -26,7 +26,7 @@
     return (i < 9 ? "0" : "") + (i + 1);
   }
   function alt(i) {
-    return photos[i].caption || "Foto kenangan RPL XII-2, frame " + (i + 1);
+    return photos[i].caption || "Foto kenangan " + (i + 1) + " dari " + total;
   }
 
   /* ----------------------------------------------------------- contact sheet */
@@ -36,11 +36,13 @@
   });
 
   photos.forEach(function (p, i) {
-    var img = YB.photoImg(p, { widths: [400, 800], sizes: "(min-width: 72rem) 300px, (min-width: 40rem) 45vw, 92vw", alt: alt(i) });
+    // Decorative in the grid: the button is named by its own text, so it still has a name if the photo fails.
+    var img = YB.photoImg(p, { widths: [400, 800], sizes: "(min-width: 72rem) 300px, (min-width: 40rem) 45vw, 92vw", alt: "" });
     var frame = YB.el("span", { class: "frame__img" }, [img]);
     if (!img) frame.classList.add("is-missing");
     var pick = (i * 7) % 10 === 3; // the photographer's grease-pencil picks
-    var btn = YB.el("button", { class: "frame" + (pick ? " is-pick" : ""), type: "button", "data-i": i, "aria-label": "Buka foto " + (i + 1) + " dari " + total }, [
+    var btn = YB.el("button", { class: "frame" + (pick ? " is-pick" : ""), type: "button", "aria-haspopup": "dialog", "data-i": i }, [
+      YB.el("span", { class: "sr-only", text: "Buka foto " + (i + 1) + " dari " + total + (p.caption ? ": " + p.caption : "") }),
       frame,
       pick ? YB.el("span", { class: "frame__pick", "aria-hidden": "true", text: "favorit" }) : null,
       YB.el("span", { class: "frame__edge", "aria-hidden": "true" }, [YB.el("span", { text: "RPL XII-2 · 400" }), YB.el("span", { text: "▸ " + num(i) + "A" })]),

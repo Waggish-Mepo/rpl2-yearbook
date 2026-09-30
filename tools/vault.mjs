@@ -17,9 +17,9 @@ import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
 import readline from "node:readline";
-import { pathToFileURL } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CORE = path.join(ROOT, "Assets/js/vault-core.js");
 const VAULT = path.join(ROOT, "Assets/js/data/vault.js");
 const PLAIN = path.join(ROOT, "private/vault.plain.json");
