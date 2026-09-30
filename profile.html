@@ -1,130 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-  	<head>
-	    <meta charset="UTF-8" />
-	    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	    <title>Profile - RPL2</title>
-		<link rel="icon" type="image/x-icon" href="Assets/images/favicon.svg">
-		<link rel="image_src" href="Assets/images/favicon.svg" />
-	    <!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-		<link rel="stylesheet" type="text/css" href="Assets/css/profile_styles.css">
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: https://drive.google.com https://*.googleusercontent.com; frame-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="robots" content="noindex, noimageindex" />
+    <title>Para Pemeran — RPL XII-2</title>
+    <meta name="description" content="32 pemeran RPL XII-2, Gen 17 SMK Wikrama Bogor: panggilan, kutipan, pesan, dan hobi." />
+    <meta name="theme-color" content="#1A1A40" />
+    <!-- Share previews. If the site moves, change the URLs below. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RPL XII-2 · Memorial Album" />
+    <meta property="og:title" content="Para Pemeran — RPL XII-2" />
+    <meta property="og:description" content="Cari temanmu, buka kartu karakternya, atau biarkan takdir yang memilih." />
+    <meta property="og:url" content="https://waggish-mepo.github.io/rpl2-yearbook/profile.html" />
+    <meta property="og:image" content="https://waggish-mepo.github.io/rpl2-yearbook/Assets/images/og-card.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Kartu judul: Memorial Album, RPL XII-2" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="Assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="Assets/images/apple-touch-icon.png" />
+    <link rel="preload" href="Assets/font/poppins/poppins-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="Assets/css/yearbook.css" />
+    <script src="Assets/js/boot.js"></script>
+    <script src="Assets/js/data/students.js" defer></script>
+    <script src="Assets/js/vault-core.js" defer></script>
+    <script src="Assets/js/data/vault.js" defer></script>
+    <script src="Assets/js/yearbook.js" defer></script>
+    <script src="Assets/js/cast.js" defer></script>
+  </head>
 
-		<!-- Styling CSS -->
-		<link rel="stylesheet" href="Assets/css/home.css" />
+  <body data-page="cast">
+    <a class="skip-link" href="#main">Lewati ke konten</a>
+    <div class="grain" aria-hidden="true"></div>
 
-	 </head>
+    <header class="site-nav" data-nav>
+      <div class="site-nav__bar container">
+        <span class="ticket-wrap">
+          <a class="ticket" href="index.html" aria-label="RPL XII-2, ke beranda">
+            <img src="Assets/images/opt/logo-240.webp" srcset="Assets/images/opt/logo-240.webp 240w, Assets/images/opt/logo-480.webp 480w" sizes="96px" width="96" height="39" alt="" />
+          </a>
+        </span>
+        <nav class="site-nav__links" aria-label="Utama">
+          <a href="index.html">Beranda</a>
+          <a href="profile.html" aria-current="page">Pemeran</a>
+          <a href="album.html">Album</a>
+        </nav>
+        <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="true">
+          <span class="motion-toggle__dot" aria-hidden="true"></span>Gerak <span class="motion-toggle__state" aria-hidden="true">On</span>
+        </button>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+          <span class="sr-only">Buka menu</span><span class="menu-button__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="menu" id="menu" hidden>
+        <nav aria-label="Menu">
+          <a href="index.html"><span class="menu__no">01</span>Beranda</a>
+          <a href="profile.html" aria-current="page"><span class="menu__no">02</span>Pemeran</a>
+          <a href="album.html"><span class="menu__no">03</span>Album</a>
+        </nav>
+        <p class="menu__foot">RPL XII-2 · Gen 17 · SMK Wikrama Bogor</p>
+      </div>
+    </header>
 
-	<body>
+    <main id="main">
+      <section class="cast-hero" aria-labelledby="cast-title">
+        <div class="container">
+          <p class="kicker">The cast · SMK Wikrama Bogor · Gen 17</p>
+          <h1 class="cast-hero__title" id="cast-title">
+            <span class="script">Para</span>
+            <span class="display extrude">Pemeran</span>
+          </h1>
+          <p class="cast-hero__lede">Cari temanmu, buka kartu karakternya, atau biarkan takdir yang memilih.</p>
 
-		<!--Navbar-->
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="container">
+          <div class="toolbar">
+            <div class="search" role="search">
+              <label class="sr-only" for="cast-search">Cari pemeran</label>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2" /><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" /></svg>
+              <input id="cast-search" type="search" placeholder="Cari nama, panggilan, hobi…" autocomplete="off" spellcheck="false" enterkeyhint="search" />
+            </div>
+            <div class="seg" role="group" aria-label="Urutkan">
+              <button type="button" data-sort="no" aria-pressed="true">Absen</button>
+              <button type="button" data-sort="az" aria-pressed="false">A–Z</button>
+            </div>
+            <button class="btn btn--paper btn-sm" type="button" data-shuffle>Siapa hari ini? <span aria-hidden="true">✦</span></button>
+            <button class="btn btn--ghost btn-sm vault-toggle" type="button" data-vault-toggle aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2" /><path class="vault-toggle__shackle" d="M8 10.5V8a4 4 0 0 1 8 0v2.5" fill="none" stroke="currentColor" stroke-width="2" /></svg>
+              <span data-vault-label>Arsip kelas</span>
+            </button>
+          </div>
+          <p class="cast-count" data-cast-count aria-live="polite">32 pemeran</p>
+        </div>
+      </section>
 
-			<a class="navbar-brand" href="#">
-				<img src="Assets/images/meh_entahlah_copy.png" alt="">
-			</a>
+      <section class="cast-stage" aria-label="Daftar pemeran">
+        <div class="container">
+          <ul class="cast-grid" data-cast-grid></ul>
+          <p class="cast-empty" data-cast-empty hidden>Nggak ketemu. Coba panggilan lain, atau nomor absennya.</p>
+          <noscript><p class="cast-empty">Halaman ini butuh JavaScript untuk menampilkan para pemeran.</p></noscript>
+        </div>
+      </section>
+    </main>
 
-			<button class="navbar-toggler" type="button">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <!-- character sheet (filled by cast.js) -->
+    <dialog class="sheet" data-sheet aria-labelledby="sheet-name"></dialog>
 
-			
-			<div class="navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-				<div class="menu ms-auto">
-					<a class="nav-link" href="index.html">Home</a>
-					<a class="nav-link active" href="profile.html">Profile</a>
-					<a class="nav-link" href="album.html">Album</a>
-				</div>
+    <!-- class vault: full birth dates + birthplaces, decrypted in the browser only -->
+    <dialog class="vault" data-vault aria-labelledby="vault-title" aria-describedby="vault-desc">
+      <p class="kicker">Classified · RPL XII-2</p>
+      <h2 class="vault__title" id="vault-title">Arsip kelas</h2>
+      <p class="vault__desc" id="vault-desc">Tanggal lahir lengkap dan tempat lahir hanya untuk anak RPL XII-2. Masukkan kata sandi kelas.</p>
+      <label class="vault__label" for="vault-pass">Kata sandi kelas</label>
+      <input class="vault__input" id="vault-pass" type="password" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" />
+      <label class="vault__show"><input type="checkbox" data-vault-show /> Tampilkan kata sandi</label>
+      <div class="vault__develop" aria-hidden="true"></div>
+      <p class="vault__status" data-vault-status role="status" aria-live="polite"></p>
+      <div class="vault__actions">
+        <button class="btn btn--ghost btn-sm" type="button" data-vault-cancel>Batal</button>
+        <button class="btn btn--paper btn-sm" type="button" data-vault-submit>Buka arsip</button>
+      </div>
+      <p class="vault__note">Dibuka di perangkatmu saja: kata sandi tidak dikirim ke mana pun, dan arsip terkunci lagi saat tab ditutup.</p>
+    </dialog>
 
-				</div>
-			</div>
-
-			</div>
-		</nav>
-		<!--End Navbar-->
-
-		<section id="slider" class="pt-5">
-			<div class="container">
-				<h3 class="text-center mt-5" style="font-family: 'Dillsburg City Demo';"><b>Profile RPL II</b></h3>
-			    <div class="slider">
-			        <div class="owl-carousel" id="profile-slider" style="height: auto !important">
-			            
-                	</div>
-            	</div>
-  			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer class="footer">
-			<p class="text-center text-white">Copyright © 2022 RPL XII-2</p>
-		</footer>
-		<!-- End 
-			Footer -->
-
-	  	<!-- Bootstrap JS Bundle -->
-	    <script src="Assets/js/bootstrap.bundle.min.js"></script>
-	    <script src="Assets/js/jquery-3.6.0.slim.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	    <script src="Assets/js/data/profiles.js"></script>
-	    <script src="Assets/js/profile_script.js"></script>
-
-		<!-- Script -->
-		<script>
-
-			//Navbar Mobile Version Toggle triger
-			$(document).ready(function () {
-				$(".navbar-toggler").click(function(){
-					$(".navbar-collapse").toggleClass("showNavbar");
-				});
-			});
-	
-			$(document).ready(function () {
-				$(document).on("scroll", onScroll);
-	
-				//smoothscroll
-				$('a[href^="#"]').on('click', function (e) {
-					e.preventDefault();
-					$(document).off("scroll");
-	
-					$('a').each(function () {
-						$(this).removeClass('active');
-					})
-					$(this).addClass('active');
-	
-					var target = this.hash,
-						menu = target;
-					$target = $(target);
-					$('html, body').stop().animate({
-						'scrollTop': $target.offset().top+6
-					}, 700, 'swing', function () {
-						window.location.hash = target;
-						$(document).on("scroll", onScroll);
-					});
-				});
-			});
-	
-			function onScroll(event){
-				var scrollPos = $(document).scrollTop();
-				$('#navbar a').each(function () {
-					var currLink = $(this);
-					var refElement = $(currLink.attr("href"));
-					if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-						$('#navbar ul li a').removeClass("active");
-						currLink.addClass("active");
-					}
-					else{
-						currLink.removeClass("active");
-					}
-				});
-			}
-	
-		</script>
-		<!-- End Script -->
-
-	</body>
+    <footer class="site-footer">
+      <div class="sprockets" aria-hidden="true"></div>
+      <div class="container site-footer__inner">
+        <p>© 2022 RPL XII-2 · SMK Wikrama Bogor</p>
+        <p>Dibuat dengan ❤ oleh Keluarga Besar RPL 2 Gen 17 · tanpa pelacak</p>
+      </div>
+    </footer>
+  </body>
 </html>
