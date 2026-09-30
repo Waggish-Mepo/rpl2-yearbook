@@ -29,8 +29,8 @@ const RULES = [
   { name: "NIS-style number", re: /\b1[0-9]{7}\b/ },
   { name: "full M/D/YYYY date", re: /\b\d{1,2}\/\d{1,2}\/\d{4}\b/ },
 ];
-// The encrypted vault is random base64 by design; legacy files are removed by the redesign.
-const ALLOW = new Set(["Assets/js/data/vault.js", "Assets/js/data/profiles.js", "Assets/js/profile_script.js"]);
+// The encrypted vault is random base64 by design, so it can't be pattern-checked.
+const ALLOW = new Set(["Assets/js/data/vault.js"]);
 
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {

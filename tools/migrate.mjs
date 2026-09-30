@@ -12,8 +12,10 @@
       multiple Instagram handles, turns "-" into null.
     - Verifies every public day/month against what the old site rendered.
 
-  Usage
-    node tools/migrate.mjs [path/to/old/profiles.js]
+  Usage (already run once — kept for the record; the old file no longer exists):
+    git show 79ffdc4:Assets/js/data/profiles.js > /tmp/old-profiles.js
+    node tools/migrate.mjs /tmp/old-profiles.js
+  (after the history scrub in docs/PRIVACY.md that commit id changes, and the values are gone)
 */
 import fs from "node:fs";
 import path from "node:path";
