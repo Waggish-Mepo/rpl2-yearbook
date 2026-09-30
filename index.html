@@ -1,278 +1,189 @@
 <!doctype html>
-<html lang="id" data-intro>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: https://drive.google.com https://*.googleusercontent.com; frame-src https://www.youtube-nocookie.com; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="robots" content="noindex, noimageindex" />
-    <title>Memorial Album — RPL XII-2</title>
-    <meta name="description" content="Buku tahunan digital RPL XII-2, Gen 17 SMK Wikrama Bogor: para pemeran, cerita, dan album kenangan." />
-    <meta name="theme-color" content="#1A1A40" />
-    <!-- Share previews (WhatsApp, Instagram, X). If the site moves, change the URLs below. -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="RPL XII-2 · Memorial Album" />
-    <meta property="og:title" content="Memorial Album — RPL XII-2" />
-    <meta property="og:description" content="The Final Cut: 32 pemeran, 3 tahun, 1 kelas. Buku tahunan digital RPL XII-2 SMK Wikrama Bogor." />
-    <meta property="og:url" content="https://waggish-mepo.github.io/rpl2-yearbook/" />
-    <meta property="og:image" content="https://waggish-mepo.github.io/rpl2-yearbook/Assets/images/og-card.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Kartu judul: Memorial Album, RPL XII-2" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="Assets/images/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="Assets/images/apple-touch-icon.png" />
-    <link rel="preload" href="Assets/font/poppins/poppins-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="Assets/css/yearbook.css" />
-    <script src="Assets/js/boot.js"></script>
-    <script src="Assets/js/data/students.js" defer></script>
-    <script src="Assets/js/yearbook.js" defer></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="Assets/images/favicon.svg">
+    <link rel="image_src" href="Assets/images/favicon.svg" />
+    <link rel="apple-touch-icon" href="Assets/images/favicon.svg" />
+    <meta
+      name="description"
+      content="Memorial Album RPL 2 GEN 17 SMK WIKRAMA BOGOR"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="Assets/css/home.css" />
+
+    <title>Home - RPL2</title>
   </head>
+  <body>
 
-  <body data-page="home">
-    <a class="skip-link" href="#main">Lewati ke konten</a>
-    <div class="grain" aria-hidden="true"></div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
 
-    <!-- film-leader countdown: pure CSS, shown once per session (see boot.js) -->
-    <div class="leader" aria-hidden="true">
-      <div class="leader__ring">
-        <div class="leader__sweep"></div>
-        <div class="leader__num"><span>3</span><span>2</span><span>1</span></div>
-      </div>
-      <p class="leader__skip">Ketuk untuk lewati</p>
-    </div>
-
-    <header class="site-nav" data-nav>
-      <div class="site-nav__bar container">
-        <span class="ticket-wrap">
-          <a class="ticket" href="index.html" aria-label="RPL XII-2, ke beranda">
-            <img src="Assets/images/opt/logo-240.webp" srcset="Assets/images/opt/logo-240.webp 240w, Assets/images/opt/logo-480.webp 480w" sizes="96px" width="96" height="39" alt="" />
+          <a class="navbar-brand" href="#">
+              <img src="Assets/images/meh_entahlah_copy.png" alt="" loading="lazy">
           </a>
-        </span>
-        <nav class="site-nav__links" aria-label="Utama">
-          <a href="index.html" aria-current="page">Beranda</a>
-          <a href="profile.html">Pemeran</a>
-          <a href="album.html">Album</a>
-        </nav>
-        <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="true">
-          <span class="motion-toggle__dot" aria-hidden="true"></span>Gerak <span class="motion-toggle__state" aria-hidden="true">On</span>
-        </button>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
-          <span class="sr-only">Buka menu</span><span class="menu-button__bars" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div class="menu" id="menu" hidden>
-        <nav aria-label="Menu">
-          <a href="index.html" aria-current="page"><span class="menu__no">01</span>Beranda</a>
-          <a href="profile.html"><span class="menu__no">02</span>Pemeran</a>
-          <a href="album.html"><span class="menu__no">03</span>Album</a>
-        </nav>
-        <p class="menu__foot">RPL XII-2 · Gen 17 · SMK Wikrama Bogor</p>
-      </div>
-    </header>
 
-    <main id="main">
-      <!-- HERO: title card inside a camcorder viewfinder -->
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="viewfinder" aria-hidden="true">
-          <div class="viewfinder__corners"></div>
-          <p class="viewfinder__tl"><span class="rec-dot"></span>REC <span data-timecode>00:00:00:00</span></p>
-          <p class="viewfinder__tr">SP<span class="batt"></span></p>
-          <p class="viewfinder__bl">APR 2022</p>
-          <p class="viewfinder__br">RPL XII-2 · TAKE 01</p>
-        </div>
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="container hero__grid">
-          <div class="hero__copy">
-            <p class="kicker">SMK Wikrama Bogor · Gen 17 · 2019–2022</p>
-            <h1 class="hero__title" id="hero-title">
-              <span class="script hero__script">Memorial Album</span>
-              <span class="display extrude hero__block">RPL XII-2</span>
-            </h1>
-            <p class="hero__lede">Awal mulanya saling asing, kemudian saling asah, saling usung, hingga saling asuh.</p>
-            <div class="hero__cta">
-              <a class="btn btn--paper" href="profile.html">Temui para pemeran <span aria-hidden="true">→</span></a>
-              <a class="btn btn--ghost" href="#tentang">Putar trailer <span aria-hidden="true">▶</span></a>
+          
+          <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <div class="menu ms-auto">
+					<a class="nav-link active" href="index.html">Home</a>
+					<a class="nav-link" href="profile.html">Profile</a>
+					<a class="nav-link" href="album.html">Album</a>
+				</div>
+
             </div>
           </div>
 
-          <figure class="polaroid polaroid--hero">
-            <span class="tape tape--tl" aria-hidden="true"></span>
-            <span class="tape tape--tr" aria-hidden="true"></span>
-            <picture>
-              <source type="image/avif" srcset="Assets/images/opt/intro-640.avif 640w, Assets/images/opt/intro-1080.avif 1080w, Assets/images/opt/intro-1600.avif 1600w" sizes="(min-width: 64rem) 620px, 92vw" />
-              <source type="image/webp" srcset="Assets/images/opt/intro-640.webp 640w, Assets/images/opt/intro-1080.webp 1080w, Assets/images/opt/intro-1600.webp 1600w" sizes="(min-width: 64rem) 620px, 92vw" />
-              <img
-                src="Assets/images/opt/intro-1080.webp"
-                width="1600"
-                height="969"
-                fetchpriority="high"
-                decoding="async"
-                alt="Foto bersama RPL XII-2, semua berpakaian serba hitam. Di foto ada dua kutipan guru: Mr. JM (Kaprog), “RPL XII-2 keren-keren, dan banyak sekali bakatnya”, dan Wiji Astuti (Guru MTK), “Kelas ini terlalu berisik tapi banyak prestasi”."
-              />
-            </picture>
-            <figcaption>Satu kelas satu cerita</figcaption>
-          </figure>
         </div>
+    </nav>
+    <!--End Navbar-->
 
-        <a class="hero__scroll" href="#tentang">Gulir</a>
-      </section>
+    <!-- App -->
+    <div class="app container">
+        
+        <!-- Intro -->
+        <div class="intro d-flex align-items-center">
 
-      <!-- nickname marquee (filled from students.js) -->
-      <div class="marquee" data-marquee aria-hidden="true">
-        <div class="marquee__row marquee__row--a"><div class="marquee__track" data-marquee-track></div></div>
-        <div class="marquee__row marquee__row--b"><div class="marquee__track" data-marquee-track></div></div>
-      </div>
-
-      <!-- SCENE 01 -->
-      <section class="scene scene--paper" id="tentang" aria-labelledby="tentang-title">
-        <div class="container">
-          <header class="slate">
-            <div class="slate__clapper" aria-hidden="true"></div>
-            <p class="slate__meta"><span>Scene 01</span><span>Take 1</span><span>Tentang kita</span></p>
-            <h2 class="display scene__title" id="tentang-title">Tentang <span class="script">kita</span></h2>
-          </header>
-
-          <div class="scene__grid">
-            <div class="facade reveal" data-video="qvnNCRPVW9I" data-title="Video kenangan RPL XII-2">
-              <div class="facade__frame">
-                <button class="facade__play" type="button">
-                  <picture>
-                    <source type="image/avif" srcset="Assets/images/opt/poster-640.avif 640w, Assets/images/opt/poster-1235.avif 1235w" sizes="(min-width: 60rem) 580px, 92vw" />
-                    <img src="Assets/images/opt/poster-640.webp" srcset="Assets/images/opt/poster-640.webp 640w, Assets/images/opt/poster-1235.webp 1235w" sizes="(min-width: 60rem) 580px, 92vw" width="1235" height="695" alt="" loading="lazy" decoding="async" />
-                  </picture>
-                  <span class="facade__icon" aria-hidden="true"></span>
-                  <span class="facade__label"><span>▶ Putar video</span><span aria-hidden="true">YouTube</span></span>
-                  <span class="sr-only">(memuat pemutar YouTube)</span>
-                </button>
-              </div>
-              <p class="facade__note">Pemutar YouTube (mode tanpa cookie) baru dimuat setelah kamu menekan putar. <a href="https://www.youtube.com/watch?v=qvnNCRPVW9I" target="_blank" rel="noopener noreferrer">Tonton di YouTube ↗</a></p>
+            <div class="title">
+                <h1 class="text-fir">Memorial Album</h1>
+                <h2 class="text-sec">Rpl II</h2>
+                <a href="profile.html" class="btn-profile">
+                    Lihat Profile
+                </a>
             </div>
 
-            <div class="scene__copy reveal">
-              <p class="pull">Kita pernah dekat, lekat, hingga hampir tamat.</p>
-              <p>Awal mulanya saling asing, kemudian saling asah, saling usung, hingga saling asuh. Kita pernah dekat, lekat, hingga hampir tamat. Ini RPL XII-2, jurusan pembangunan berkedok coding. Penghuninya terdiri dari berbagai macam spesies.</p>
-              <p>Ada yang telah mendaki puncak meniti karir, ada juga yang ingin memilih untuk memakai toga kelak, ada yang hanya berjalan santai namun berproses, dan ada juga yang belum memutuskan untuk membuat arus, masih saja berenang mengikuti. Tak apa, sedari awal dalam diam pun kita berproses. Bedanya lebih lama saja.</p>
-              <p>Semua jenis spesies itu berpadu-padan menjadi RPL XII-2. Jangan macam-macam, kita punya ketua pemuda pancasila. Hehehe</p>
+            <div class="image">
+                <img src="Assets/images/intro.png" alt="" loading="lazy">
             </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- FEATURING: movie-poster billing -->
-      <section class="featuring" aria-labelledby="featuring-title">
-        <div class="container">
-          <div class="poster reveal">
-            <div class="poster__copy">
-              <p class="kicker">Featuring</p>
-              <h2 class="display extrude poster__title" id="featuring-title">Meet our glorious leader</h2>
-              <p class="poster__line">One of the members of the strongest organization in the world, Pemuda Pancasila.</p>
-              <p class="poster__billing" aria-hidden="true">RPL XII-2 presents · a Wikrama Bogor production · starring the one and only ketua · with 31 other legends · music by Ngemusik 24/7 · wardrobe serba hitam · © MMXXII</p>
+        </div>
+        <!-- End Intro -->
+
+        <!-- About -->
+        <div class="about d-flex mt-5 mb-5">
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qvnNCRPVW9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <picture class="poster__cutout">
-              <source type="image/avif" srcset="Assets/images/opt/leader-411.avif" />
-              <img src="Assets/images/opt/leader-411.webp" width="411" height="400" alt="Sang ketua kelas: jas hitam, dasi hitam, kacamata hitam." loading="lazy" decoding="async" />
-            </picture>
-          </div>
-        </div>
-      </section>
 
-      <!-- SCENE 02 -->
-      <section class="scene scene--paper" id="membangun" aria-labelledby="membangun-title">
-        <div class="container">
-          <header class="slate">
-            <div class="slate__clapper" aria-hidden="true"></div>
-            <p class="slate__meta"><span>Scene 02</span><span>Take 27</span><span>RPL II membangun</span></p>
-            <h2 class="display scene__title" id="membangun-title">RPL II <span class="script">membangun</span></h2>
-          </header>
-
-          <div class="bigquotes">
-            <blockquote class="bigquote reveal">Sepandai-pandainya tupai melompat, akhirnya bakal jatuh juga.</blockquote>
-            <blockquote class="bigquote bigquote--logo logo-type reveal">Sejomblo-jomblonya kamu sekarang, akhirnya bakal menikah juga.</blockquote>
-            <p class="aside reveal">Eits, tahan dulu. Kita cari cuan dulu ygy, hehe</p>
-          </div>
-
-          <div class="scene__grid scene__grid--flip">
-            <figure class="contact reveal">
-              <picture>
-                <source type="image/avif" srcset="Assets/images/opt/content-640.avif 640w, Assets/images/opt/content-1080.avif 1080w, Assets/images/opt/content-1600.avif 1600w" sizes="(min-width: 60rem) 560px, 92vw" />
-                <img src="Assets/images/opt/content-1080.webp" srcset="Assets/images/opt/content-640.webp 640w, Assets/images/opt/content-1080.webp 1080w, Assets/images/opt/content-1600.webp 1600w" sizes="(min-width: 60rem) 560px, 92vw" width="1600" height="963" alt="Dua foto kelas di depan dinding batu: para siswi, lalu para siswa, semua berpakaian serba hitam." loading="lazy" decoding="async" />
-              </picture>
-              <figcaption>Fig. 02 · Sesi foto kelas · 2022</figcaption>
-            </figure>
-            <div class="scene__copy reveal">
-              <p class="pull">Cara terbaik untuk menyimpan rasa adalah mengabadikannya ke dalam sesuatu.</p>
-              <p>Cara terbaik untuk menyimpan rasa adalah mengabadikannya ke dalam sesuatu. Menaruhnya disana selamanya. Di lembaran bingkai berajut gelak tawa. Ini RPL XII-2, lulus wikrama siap membangun negeri, katanya.</p>
-              <p>Tapi kami bukan tukang matrial, tak punya bahan untuk membangun negeri. Lebih baik membangun rumah tangga. Sepandai-pandainya tupai melompat, akhirnya bakal jatuh juga. Sejomblo-jomblonya kamu sekarang, akhirnya bakal menikah juga. Eits, tahan dulu. Kita cari cuan dulu ygy, hehe</p>
-              <p><a class="btn btn--ink" href="album.html">Buka album <span aria-hidden="true">→</span></a></p>
+            <div class="desc">
+                <h2 class="text-fir">Tentang RPL II</h2>
+                <p class="text-sec">Awal mulanya saling asing, kemudian saling asah, saling usung, hingga saling asuh. Kita pernah dekat, lekat, hingga hampir tamat. Ini RPL XII-2, jurusan pembangunan  berkedok coding. Penghuninya terdiri dari berbagai macam spesies. Ada yang telah mendaki puncak meniti karir, ada juga yang ingin memilih untuk memakai toga kelak,  ada yang hanya berjalan santai namun berproses, dan ada juga yang belum memutuskan untuk membuat arus, masih saja berenang mengikuti. Tak apa, sedari awal dalam diam pun kita berproses. Bedanya lebih lama saja. Semua jenis spesies itu berpadu-padan menjadi RPL XII-2. Jangan macam-macam, kita punya ketua pemuda pancasila. Hehehe</p>
             </div>
-          </div>
+
         </div>
-      </section>
+        <!-- End About -->
 
-      <!-- END CREDITS -->
-      <section class="credits" id="credits" aria-labelledby="credits-title">
-        <div class="container credits__head">
-          <p class="kicker">End credits</p>
-          <h2 class="display extrude credits__title" id="credits-title">The Final Cut</h2>
-          <button class="btn btn--ghost btn-sm credits__toggle" type="button" data-credits-toggle hidden>❚❚ Jeda kredit</button>
+        <!-- Banner -->
+        <div class="banner">
+            <div class="wrapperBanner">
+                
+                <div class="textBanner">
+                    <h3>MEET OUR GLORIUS LEADER</h3>
+                    <h1>One of the members of the strongest organization in the world, Pemuda Pancasila</h1>
+                </div>
+
+                <div class="imagePreview">
+                    <img src="Assets/images/DSC06614-removebg 1.png" alt="" loading="lazy">
+                </div>
+
+            </div>
         </div>
+        <!-- End Banner -->
 
-        <div class="credits__viewport" data-credits tabindex="0" role="region" aria-label="Daftar kredit (bisa digulir)">
-          <div class="credits__roll">
-            <p class="credits__role">Starring</p>
-            <ol class="credits__cast" data-credits-cast></ol>
+        <!-- Content -->
+        <div class="content d-flex">
+            
+            <div class="desc">
+                <h2 class="text-fir">RPL II Membangun</h2>
+                <p class="text-sec">Cara terbaik untuk menyimpan rasa adalah mengabadikannya ke dalam sesuatu. Menaruhnya disana selamanya. Di lembaran bingkai berajut gelak tawa. Ini RPL XII-2, lulus wikrama siap membangun negeri, katanya. Tapi kami bukan tukang matrial, tak punya bahan untuk membangun negeri. Lebih baik membangun rumah tangga. Sepandai-pandainya tupai melompat, akhirnya bakal jatuh juga. Sejomblo-jomblonya kamu sekarang, akhirnya bakal menikah juga. Eits, tahan dulu. Kita cari cuan dulu ygy, hehe</p>
+            </div>
 
-            <p class="credits__role">Special thanks</p>
-            <dl class="credits__thanks">
-              <div>
-                <dt>Kaprog</dt>
-                <dd>Mr. JM <q>RPL XII-2 keren-keren, dan banyak sekali bakatnya</q></dd>
-              </div>
-              <div>
-                <dt>Guru MTK</dt>
-                <dd>Wiji Astuti <q>Kelas ini terlalu berisik tapi banyak prestasi</q></dd>
-              </div>
-              <div>
-                <dt>Dan</dt>
-                <dd>Semua guru &amp; staf SMK Wikrama Bogor</dd>
-              </div>
-            </dl>
+            <div class="image">
+                <img src="Assets/images/content.png" alt="" loading="lazy">
+            </div>
 
-            <p class="credits__role">Sponsored by</p>
-            <ul class="credits__sponsors">
-              <li><img src="Assets/images/opt/sponsor-mepo-160.webp" srcset="Assets/images/opt/sponsor-mepo-160.webp 160w, Assets/images/opt/sponsor-mepo-320.webp 320w" sizes="92px" width="160" height="160" alt="Mepo" loading="lazy" /></li>
-              <li><img src="Assets/images/opt/sponsor-bin-mepo-160.webp" srcset="Assets/images/opt/sponsor-bin-mepo-160.webp 160w, Assets/images/opt/sponsor-bin-mepo-320.webp 320w" sizes="92px" width="160" height="160" alt="BIN Mepo" loading="lazy" /></li>
-              <li><img src="Assets/images/opt/sponsor-rpl-160.webp" srcset="Assets/images/opt/sponsor-rpl-160.webp 160w, Assets/images/opt/sponsor-rpl-320.webp 320w" sizes="92px" width="160" height="160" alt="RPL" loading="lazy" /></li>
-              <li><img src="Assets/images/opt/sponsor-wk-160.webp" srcset="Assets/images/opt/sponsor-wk-160.webp 160w, Assets/images/opt/sponsor-wk-320.webp 320w" sizes="92px" width="160" height="159" alt="SMK Wikrama Bogor" loading="lazy" /></li>
-            </ul>
-
-            <p class="credits__end">Directed by <span class="script">Kehidupan</span></p>
-            <p class="credits__small">Produced by Keluarga Besar RPL 2 Gen 17 · Filmed at SMK Wikrama Bogor, 2019–2022</p>
-            <p class="credits__small">No students were harmed in the making of this yearbook (kecuali pas ujian).</p>
-          </div>
         </div>
+        <!-- End Content -->
 
-        <div class="container postcredit" data-postcredit>
-          <p class="kicker">Post-credit scene</p>
-          <div aria-live="polite">
-            <p class="postcredit__quote">Terima kasih sudah menonton.</p>
-            <p class="postcredit__who">— RPL XII-2</p>
-          </div>
-          <div class="postcredit__actions">
-            <button class="btn btn--ghost" type="button" data-postcredit-next hidden>Pesan lain <span aria-hidden="true">↻</span></button>
-            <a class="btn btn--paper" href="profile.html">Temui para pemeran <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
-      </section>
-    </main>
+    </div>
+    <!-- End App -->
 
-    <footer class="site-footer">
-      <div class="sprockets" aria-hidden="true"></div>
-      <div class="container site-footer__inner">
-        <p>© 2022 RPL XII-2 · SMK Wikrama Bogor</p>
-        <p>Dibuat dengan ❤ oleh Keluarga Besar RPL 2 Gen 17 · tanpa pelacak</p>
-      </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="text-center text-white">Copyright © 2022 RPL XII-2</p>
     </footer>
+    <!-- End 
+        Footer -->
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="Assets/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/js/jquery-3.6.0.slim.min.js"></script>
+
+    <!-- Script -->
+    <script>
+
+        //Navbar Mobile Version Toggle triger
+        $(document).ready(function () {
+            $(".navbar-toggler").click(function(){
+                $(".navbar-collapse").toggleClass("showNavbar");
+            });
+        });
+
+        $(document).ready(function () {
+            $(document).on("scroll", onScroll);
+
+            //smoothscroll
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                $(document).off("scroll");
+
+                $('a').each(function () {
+                    $(this).removeClass('active');
+                })
+                $(this).addClass('active');
+
+                var target = this.hash,
+                    menu = target;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top+6
+                }, 700, 'swing', function () {
+                    window.location.hash = target;
+                    $(document).on("scroll", onScroll);
+                });
+            });
+        });
+
+        function onScroll(event){
+            var scrollPos = $(document).scrollTop();
+            $('#navbar a').each(function () {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('#navbar ul li a').removeClass("active");
+                    currLink.addClass("active");
+                }
+                else{
+                    currLink.removeClass("active");
+                }
+            });
+        }
+
+    </script>
+    <!-- End Script -->
+
   </body>
 </html>

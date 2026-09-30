@@ -1,7 +1,0 @@
-# Plaintext vault material — never commit
-private/
-
-# Tooling
-node_modules/
-test-results/
-.DS_Store
